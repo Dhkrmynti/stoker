@@ -2,18 +2,20 @@
 
 <!-- impeccable:product-schema 1 -->
 
-## Current brand (2026-10-18): DIGBY ($DIGBY)
+## Current brand (2026-10-18): STOKER ($COAL)
 
-The public site was redrawn as **DIGBY ($DIGBY)**, a pixel graveyard and its gravedigger. Engine, API, tokenomics and `/memex` are unchanged.
+The public site was redrawn as **STOKER ($COAL)**, the footplate of a steam locomotive that burns its own supply. Engine, bot, API, tokenomics and `/memex` are unchanged; only UI and lore copy changed.
 
-- Lore: every token ever sent to 0x…dEaD had to go somewhere. **Digby**, a hooded skeleton with a shovel and a lantern, keeps the graveyard at the dead address and buries it. No days off. Catchphrase: "Another one for the ground."
-- Mascot: **Digby**. He levels up with the real share of supply buried: **Night Shift** (0–0.5%, wooden shovel, patched robe), **Iron Spade** (0.5–1%), **Lanternbearer** (1–2.5%, green lantern), **Keeper** (2.5–5%, keeper's cloak), **The Undertaker** (5%+, top hat, gold spade). Thresholds are lore, tunable in `src/components/digby/stages.ts`.
-- Terms: fee escrow → **the fee lantern**; claim threshold → **a full lantern**; the bot → **the night shift**; claim → **the night shift claims it**; buyback → **buying $DIGBY**; burn → **a burial** (Digby buries it); dead address → **the graveyard / the yard**; odd runs → **burial shifts**; even runs → **Digby's wages** (project wallet, shown openly); burn log → **the grave register**; one burn → **a grave** with a headstone; ghosts → one per grave.
-- Voice: grumpy, deadpan, a little cosy ("no refunds down here.", "nothing comes back up.").
-- Fonts: Pixelify Sans (wordmark, headings, numbers), Silkscreen (labels, buttons), Atkinson Hyperlegible (body), JetBrains Mono (addresses).
-- Art: all sprites are built in code in `src/components/digby/pixels.ts`; the X kit renders from the same code (`konten-x/render/`).
-- Not live yet: no domain, no X, no CA. $DIGBY needs a new Pons launch; the on-chain name/ticker of the current token cannot change.
-- Previous brands (MUNCH, Lava Pit/Brr, Black Void, Mort's Ghost Train, Sherwood) are retired; the Black Void sections below are historical.
+- Lore: every steam engine has a fireman. **Stoker** works the footplate of an engine that runs on its own supply: every $COAL that goes in the firebox is gone. Catchphrase: "Shovel it in."
+- The fire is the fee escrow: the hero firebox burns as hard as the gauge reads (escrow / claim threshold), so trading literally stokes it.
+- Engine classes by real share of supply burned (Whyte wheel arrangements): **Yard Shunter 0-4-0** (0–0.5%), **Goods Engine 0-6-0** (0.5–1%), **Mainline 4-6-0** (1–2.5%), **Pacific Express 4-6-2** (2.5–5%), **The Northern 4-8-4** (5%+). Thresholds are lore, tunable in `src/components/stoker/stages.ts`.
+- Terms: fee escrow → **the fee gauge / fee pressure**; claim threshold → **a full gauge** (the whistle blows); the bot → **the bot** (no nickname); claim → **the bot claims it**; buyback → **buying $COAL**; burn → **into the firebox / a fire**; dead address → **the firebox at 0x…dEaD**; odd runs → **burn runs**; even runs → **Stoker's pay** (project wallet, shown openly); burn log → **the logbook**; one burn → **a ticket**; live status → **the cab board**.
+- Voice: loud, sooty, working-class, short sentences ("nothing comes back out of a firebox.", "shovel it in.").
+- The page is one 3D map (user asked for a 3D map that stays pixel and light): a low-poly island rendered by three.js at 1/3 resolution (1/2 on phones), behind every section. Scrolling flies the camera between stations: furnace at 0x…dEaD with its doors shut (hero), gauge tower, water tower, $COAL hopper, furnace (odd runs), pay office (even runs), five class platforms, logbook depot, signal box (cab), island overview (story). The page ends inside the furnace (user's call, 2026-10-18: going in has to be the last thing, nothing comes back out): back at the doors with "Shovel it in.", the doors swing open as you scroll, the camera flies in through the doorway, a wall of pixel fire climbs over the screen with "Into the fire.", and the Buy button and CA wait inside the fire (`Finale.tsx`). The live train on the loop is today's class; locked classes stand as wireframes. Camera shots live in `src/components/stoker/world/World.tsx` (`SHOTS`), keyed by `data-cam` on sections.
+- Look: pixel art (2026-10-18, user asked for pixel). Fonts: Jersey 10 (display), Tiny5 (stamps), DotGothic16 (body), JetBrains Mono (addresses). Fire is a pixel "Doom fire" canvas, the gauge, engines and mark are pixel sprites drawn in code, all motion is stepped. The palette (soot iron, one ember light, brass) keeps it apart from the retired DIGBY pixel graveyard (night purple, ecto green).
+- Not live yet: no domain, no X, no CA. $COAL needs a new Pons launch; the on-chain name/ticker of the current token cannot change. `X_URL` in `App.tsx` is empty until there is an account; og:image and canonical were removed from `index.html` until there is a domain and a STOKER link-preview image.
+- Demo a burn with `?burn` or `?burn=1234567`: the alert shows, and on the map a coal wagon rolls into the furnace and the stack flares.
+- Previous brands (DIGBY, MUNCH, Lava Pit/Brr, Black Void, Mort's Ghost Train, Sherwood) are retired; the Black Void sections below are historical.
 
 ## Platform
 

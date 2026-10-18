@@ -1,6 +1,6 @@
-# DIGBY ($DIGBY) — Autonomous Buyback & Burn Engine (Pons Family v2)
+# STOKER ($COAL) — Autonomous Buyback & Burn Engine (Pons Family v2)
 
-The public site is DIGBY, a pixel gravedigger who keeps the graveyard at `0x…dEaD`: every trade lights his fee lantern (the fee escrow), the night shift (the bot) buys $DIGBY back and Digby buries it at `0x…dEaD`, one headstone per burial. He levels up with the real share of supply buried. See `PRODUCT.md` for the lore.
+The public site is STOKER, the footplate of a steam engine that burns its own supply: every trade builds fee pressure (the fee escrow), a full gauge blows the whistle, the bot buys $COAL back and Stoker shovels it into the firebox at `0x…dEaD`, one logbook ticket per burn. The engine grows by wheel arrangement with the real share of supply burned. See `PRODUCT.md` for the lore.
 
 An autonomous token liquidity, buyback, and burn engine deployed on **Robinhood Chain (Chain ID: 4663)** integrated with **Pons Family v2**.
 

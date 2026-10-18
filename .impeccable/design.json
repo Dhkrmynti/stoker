@@ -1,503 +1,443 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-17T03:35:18.642Z",
-  "title": "Design System: MUNCH",
+  "generatedAt": "2026-10-18T10:24:47.000Z",
+  "title": "Design System: STOKER",
   "extensions": {
     "colorMeta": {
-      "shell": {
-        "role": "primary",
-        "displayName": "Tangerine Shell",
-        "canonical": "#ff7a2f",
-        "oklch": "oklch(72.5% 0.182 46)",
+      "soot": {
+        "role": "neutral",
+        "displayName": "Soot",
+        "canonical": "#0f0d0d",
+        "oklch": "oklch(16.2% 0.003 18)",
         "tonalRamp": [
-          "oklch(15% 0.182 46)",
-          "oklch(26.4% 0.182 46)",
-          "oklch(37.9% 0.182 46)",
-          "oklch(49.3% 0.182 46)",
-          "oklch(60.7% 0.182 46)",
-          "oklch(72.1% 0.182 46)",
-          "oklch(83.6% 0.182 46)",
-          "oklch(95% 0.182 46)"
+          "oklch(15.0% 0.003 18)",
+          "oklch(26.4% 0.003 18)",
+          "oklch(37.9% 0.003 18)",
+          "oklch(49.3% 0.003 18)",
+          "oklch(60.7% 0.003 18)",
+          "oklch(72.1% 0.003 18)",
+          "oklch(83.6% 0.003 18)",
+          "oklch(95.0% 0.003 18)"
         ]
       },
-      "shell-hi": {
-        "role": "primary",
-        "displayName": "Shell Highlight",
-        "canonical": "#ffa565",
-        "oklch": "oklch(79.9% 0.133 54.9)",
+      "iron": {
+        "role": "neutral",
+        "displayName": "Iron",
+        "canonical": "#171414",
+        "oklch": "oklch(19.5% 0.005 18)",
         "tonalRamp": [
-          "oklch(15% 0.133 54.9)",
-          "oklch(26.4% 0.133 54.9)",
-          "oklch(37.9% 0.133 54.9)",
-          "oklch(49.3% 0.133 54.9)",
-          "oklch(60.7% 0.133 54.9)",
-          "oklch(72.1% 0.133 54.9)",
-          "oklch(83.6% 0.133 54.9)",
-          "oklch(95% 0.133 54.9)"
+          "oklch(15.0% 0.005 18)",
+          "oklch(26.4% 0.005 18)",
+          "oklch(37.9% 0.005 18)",
+          "oklch(49.3% 0.005 18)",
+          "oklch(60.7% 0.005 18)",
+          "oklch(72.1% 0.005 18)",
+          "oklch(83.6% 0.005 18)",
+          "oklch(95.0% 0.005 18)"
         ]
       },
-      "shell-lo": {
-        "role": "primary",
-        "displayName": "Shell Shade",
-        "canonical": "#e0571a",
-        "oklch": "oklch(63% 0.184 40.6)",
+      "plate": {
+        "role": "neutral",
+        "displayName": "Plate",
+        "canonical": "#211c1b",
+        "oklch": "oklch(23.2% 0.008 31)",
         "tonalRamp": [
-          "oklch(15% 0.184 40.6)",
-          "oklch(26.4% 0.184 40.6)",
-          "oklch(37.9% 0.184 40.6)",
-          "oklch(49.3% 0.184 40.6)",
-          "oklch(60.7% 0.184 40.6)",
-          "oklch(72.1% 0.184 40.6)",
-          "oklch(83.6% 0.184 40.6)",
-          "oklch(95% 0.184 40.6)"
+          "oklch(15.0% 0.008 31)",
+          "oklch(26.4% 0.008 31)",
+          "oklch(37.9% 0.008 31)",
+          "oklch(49.3% 0.008 31)",
+          "oklch(60.7% 0.008 31)",
+          "oklch(72.1% 0.008 31)",
+          "oklch(83.6% 0.008 31)",
+          "oklch(95.0% 0.008 31)"
         ]
       },
-      "bubble": {
-        "role": "primary",
-        "displayName": "Bubblegum Key",
-        "canonical": "#ff3d7f",
-        "oklch": "oklch(66.9% 0.23 6.1)",
+      "plate-hi": {
+        "role": "neutral",
+        "displayName": "Plate High",
+        "canonical": "#2c2524",
+        "oklch": "oklch(27.2% 0.011 27)",
         "tonalRamp": [
-          "oklch(15% 0.23 6.1)",
-          "oklch(26.4% 0.23 6.1)",
-          "oklch(37.9% 0.23 6.1)",
-          "oklch(49.3% 0.23 6.1)",
-          "oklch(60.7% 0.23 6.1)",
-          "oklch(72.1% 0.23 6.1)",
-          "oklch(83.6% 0.23 6.1)",
-          "oklch(95% 0.23 6.1)"
+          "oklch(15.0% 0.011 27)",
+          "oklch(26.4% 0.011 27)",
+          "oklch(37.9% 0.011 27)",
+          "oklch(49.3% 0.011 27)",
+          "oklch(60.7% 0.011 27)",
+          "oklch(72.1% 0.011 27)",
+          "oklch(83.6% 0.011 27)",
+          "oklch(95.0% 0.011 27)"
         ]
       },
-      "bubble-lo": {
-        "role": "primary",
-        "displayName": "Bubblegum Skirt",
-        "canonical": "#c41f5c",
-        "oklch": "oklch(53.9% 0.199 6.2)",
+      "seam": {
+        "role": "neutral",
+        "displayName": "Seam",
+        "canonical": "#3a3230",
+        "oklch": "oklch(32.5% 0.012 34)",
         "tonalRamp": [
-          "oklch(15% 0.199 6.2)",
-          "oklch(26.4% 0.199 6.2)",
-          "oklch(37.9% 0.199 6.2)",
-          "oklch(49.3% 0.199 6.2)",
-          "oklch(60.7% 0.199 6.2)",
-          "oklch(72.1% 0.199 6.2)",
-          "oklch(83.6% 0.199 6.2)",
-          "oklch(95% 0.199 6.2)"
+          "oklch(15.0% 0.012 34)",
+          "oklch(26.4% 0.012 34)",
+          "oklch(37.9% 0.012 34)",
+          "oklch(49.3% 0.012 34)",
+          "oklch(60.7% 0.012 34)",
+          "oklch(72.1% 0.012 34)",
+          "oklch(83.6% 0.012 34)",
+          "oklch(95.0% 0.012 34)"
         ]
       },
-      "sun": {
+      "rivet": {
+        "role": "neutral",
+        "displayName": "Rivet",
+        "canonical": "#5c514c",
+        "oklch": "oklch(44.4% 0.017 46)",
+        "tonalRamp": [
+          "oklch(15.0% 0.017 46)",
+          "oklch(26.4% 0.017 46)",
+          "oklch(37.9% 0.017 46)",
+          "oklch(49.3% 0.017 46)",
+          "oklch(60.7% 0.017 46)",
+          "oklch(72.1% 0.017 46)",
+          "oklch(83.6% 0.017 46)",
+          "oklch(95.0% 0.017 46)"
+        ]
+      },
+      "steam": {
+        "role": "neutral",
+        "displayName": "Steam",
+        "canonical": "#eee9e2",
+        "oklch": "oklch(93.6% 0.011 77)",
+        "tonalRamp": [
+          "oklch(15.0% 0.011 77)",
+          "oklch(26.4% 0.011 77)",
+          "oklch(37.9% 0.011 77)",
+          "oklch(49.3% 0.011 77)",
+          "oklch(60.7% 0.011 77)",
+          "oklch(72.1% 0.011 77)",
+          "oklch(83.6% 0.011 77)",
+          "oklch(95.0% 0.011 77)"
+        ]
+      },
+      "ash": {
+        "role": "neutral",
+        "displayName": "Ash",
+        "canonical": "#aaa098",
+        "oklch": "oklch(71.2% 0.016 61)",
+        "tonalRamp": [
+          "oklch(15.0% 0.016 61)",
+          "oklch(26.4% 0.016 61)",
+          "oklch(37.9% 0.016 61)",
+          "oklch(49.3% 0.016 61)",
+          "oklch(60.7% 0.016 61)",
+          "oklch(72.1% 0.016 61)",
+          "oklch(83.6% 0.016 61)",
+          "oklch(95.0% 0.016 61)"
+        ]
+      },
+      "ember": {
+        "role": "primary",
+        "displayName": "Firebox Ember",
+        "canonical": "#ff5a1f",
+        "oklch": "oklch(68.2% 0.211 38)",
+        "tonalRamp": [
+          "oklch(15.0% 0.200 38)",
+          "oklch(26.4% 0.200 38)",
+          "oklch(37.9% 0.200 38)",
+          "oklch(49.3% 0.200 38)",
+          "oklch(60.7% 0.200 38)",
+          "oklch(72.1% 0.200 38)",
+          "oklch(83.6% 0.200 38)",
+          "oklch(95.0% 0.200 38)"
+        ]
+      },
+      "ember-hi": {
+        "role": "primary",
+        "displayName": "Ember High",
+        "canonical": "#ff7a45",
+        "oklch": "oklch(72.7% 0.176 41)",
+        "tonalRamp": [
+          "oklch(15.0% 0.176 41)",
+          "oklch(26.4% 0.176 41)",
+          "oklch(37.9% 0.176 41)",
+          "oklch(49.3% 0.176 41)",
+          "oklch(60.7% 0.176 41)",
+          "oklch(72.1% 0.176 41)",
+          "oklch(83.6% 0.176 41)",
+          "oklch(95.0% 0.176 41)"
+        ]
+      },
+      "ember-lo": {
+        "role": "primary",
+        "displayName": "Ember Low",
+        "canonical": "#b8321a",
+        "oklch": "oklch(52.1% 0.175 32)",
+        "tonalRamp": [
+          "oklch(15.0% 0.175 32)",
+          "oklch(26.4% 0.175 32)",
+          "oklch(37.9% 0.175 32)",
+          "oklch(49.3% 0.175 32)",
+          "oklch(60.7% 0.175 32)",
+          "oklch(72.1% 0.175 32)",
+          "oklch(83.6% 0.175 32)",
+          "oklch(95.0% 0.175 32)"
+        ]
+      },
+      "flame": {
+        "role": "primary",
+        "displayName": "Flame",
+        "canonical": "#ffa630",
+        "oklch": "oklch(79.6% 0.160 68)",
+        "tonalRamp": [
+          "oklch(15.0% 0.160 68)",
+          "oklch(26.4% 0.160 68)",
+          "oklch(37.9% 0.160 68)",
+          "oklch(49.3% 0.160 68)",
+          "oklch(60.7% 0.160 68)",
+          "oklch(72.1% 0.160 68)",
+          "oklch(83.6% 0.160 68)",
+          "oklch(95.0% 0.160 68)"
+        ]
+      },
+      "core": {
+        "role": "primary",
+        "displayName": "White Heat",
+        "canonical": "#ffe08a",
+        "oklch": "oklch(91.4% 0.111 90)",
+        "tonalRamp": [
+          "oklch(15.0% 0.111 90)",
+          "oklch(26.4% 0.111 90)",
+          "oklch(37.9% 0.111 90)",
+          "oklch(49.3% 0.111 90)",
+          "oklch(60.7% 0.111 90)",
+          "oklch(72.1% 0.111 90)",
+          "oklch(83.6% 0.111 90)",
+          "oklch(95.0% 0.111 90)"
+        ]
+      },
+      "brass": {
         "role": "secondary",
-        "displayName": "Sun Sticker",
-        "canonical": "#ffd166",
-        "oklch": "oklch(88% 0.135 86.1)",
+        "displayName": "Instrument Brass",
+        "canonical": "#d4a648",
+        "oklch": "oklch(75.0% 0.123 83)",
         "tonalRamp": [
-          "oklch(15% 0.135 86.1)",
-          "oklch(26.4% 0.135 86.1)",
-          "oklch(37.9% 0.135 86.1)",
-          "oklch(49.3% 0.135 86.1)",
-          "oklch(60.7% 0.135 86.1)",
-          "oklch(72.1% 0.135 86.1)",
-          "oklch(83.6% 0.135 86.1)",
-          "oklch(95% 0.135 86.1)"
+          "oklch(15.0% 0.123 83)",
+          "oklch(26.4% 0.123 83)",
+          "oklch(37.9% 0.123 83)",
+          "oklch(49.3% 0.123 83)",
+          "oklch(60.7% 0.123 83)",
+          "oklch(72.1% 0.123 83)",
+          "oklch(83.6% 0.123 83)",
+          "oklch(95.0% 0.123 83)"
         ]
       },
-      "jar": {
+      "brass-hi": {
         "role": "secondary",
-        "displayName": "Snack-Jar Sky",
-        "canonical": "#5ec8f2",
-        "oklch": "oklch(78.7% 0.114 227)",
+        "displayName": "Brass High",
+        "canonical": "#ecc97a",
+        "oklch": "oklch(84.9% 0.106 86)",
         "tonalRamp": [
-          "oklch(15% 0.114 227)",
-          "oklch(26.4% 0.114 227)",
-          "oklch(37.9% 0.114 227)",
-          "oklch(49.3% 0.114 227)",
-          "oklch(60.7% 0.114 227)",
-          "oklch(72.1% 0.114 227)",
-          "oklch(83.6% 0.114 227)",
-          "oklch(95% 0.114 227)"
+          "oklch(15.0% 0.106 86)",
+          "oklch(26.4% 0.106 86)",
+          "oklch(37.9% 0.106 86)",
+          "oklch(49.3% 0.106 86)",
+          "oklch(60.7% 0.106 86)",
+          "oklch(72.1% 0.106 86)",
+          "oklch(83.6% 0.106 86)",
+          "oklch(95.0% 0.106 86)"
         ]
       },
-      "jar-ink": {
+      "brass-lo": {
         "role": "secondary",
-        "displayName": "Jar Ink",
-        "canonical": "#12607f",
-        "oklch": "oklch(46% 0.086 230.8)",
+        "displayName": "Brass Low",
+        "canonical": "#8a6a24",
+        "oklch": "oklch(54.3% 0.095 83)",
         "tonalRamp": [
-          "oklch(15% 0.086 230.8)",
-          "oklch(26.4% 0.086 230.8)",
-          "oklch(37.9% 0.086 230.8)",
-          "oklch(49.3% 0.086 230.8)",
-          "oklch(60.7% 0.086 230.8)",
-          "oklch(72.1% 0.086 230.8)",
-          "oklch(83.6% 0.086 230.8)",
-          "oklch(95% 0.086 230.8)"
+          "oklch(15.0% 0.095 83)",
+          "oklch(26.4% 0.095 83)",
+          "oklch(37.9% 0.095 83)",
+          "oklch(49.3% 0.095 83)",
+          "oklch(60.7% 0.095 83)",
+          "oklch(72.1% 0.095 83)",
+          "oklch(83.6% 0.095 83)",
+          "oklch(95.0% 0.095 83)"
         ]
       },
-      "lcd": {
+      "rail": {
         "role": "neutral",
-        "displayName": "LCD Screen",
-        "canonical": "#c4cfa1",
-        "oklch": "oklch(83.4% 0.063 118.7)",
+        "displayName": "Rail",
+        "canonical": "#6d6560",
+        "oklch": "oklch(51.3% 0.013 54)",
         "tonalRamp": [
-          "oklch(15% 0.063 118.7)",
-          "oklch(26.4% 0.063 118.7)",
-          "oklch(37.9% 0.063 118.7)",
-          "oklch(49.3% 0.063 118.7)",
-          "oklch(60.7% 0.063 118.7)",
-          "oklch(72.1% 0.063 118.7)",
-          "oklch(83.6% 0.063 118.7)",
-          "oklch(95% 0.063 118.7)"
+          "oklch(15.0% 0.013 54)",
+          "oklch(26.4% 0.013 54)",
+          "oklch(37.9% 0.013 54)",
+          "oklch(49.3% 0.013 54)",
+          "oklch(60.7% 0.013 54)",
+          "oklch(72.1% 0.013 54)",
+          "oklch(83.6% 0.013 54)",
+          "oklch(95.0% 0.013 54)"
         ]
       },
-      "lcd-ink": {
-        "role": "neutral",
-        "displayName": "LCD Ink",
-        "canonical": "#2f3a22",
-        "oklch": "oklch(33.1% 0.043 128.5)",
-        "tonalRamp": [
-          "oklch(15% 0.043 128.5)",
-          "oklch(26.4% 0.043 128.5)",
-          "oklch(37.9% 0.043 128.5)",
-          "oklch(49.3% 0.043 128.5)",
-          "oklch(60.7% 0.043 128.5)",
-          "oklch(72.1% 0.043 128.5)",
-          "oklch(83.6% 0.043 128.5)",
-          "oklch(95% 0.043 128.5)"
-        ]
-      },
-      "lcd-soft": {
-        "role": "neutral",
-        "displayName": "LCD Soft Ink",
-        "canonical": "#45502f",
-        "oklch": "oklch(41.2% 0.053 123.7)",
-        "tonalRamp": [
-          "oklch(15% 0.053 123.7)",
-          "oklch(26.4% 0.053 123.7)",
-          "oklch(37.9% 0.053 123.7)",
-          "oklch(49.3% 0.053 123.7)",
-          "oklch(60.7% 0.053 123.7)",
-          "oklch(72.1% 0.053 123.7)",
-          "oklch(83.6% 0.053 123.7)",
-          "oklch(95% 0.053 123.7)"
-        ]
-      },
-      "lcd-mid": {
-        "role": "neutral",
-        "displayName": "Half-Lit Pixel",
-        "canonical": "#8a9666",
-        "oklch": "oklch(65.1% 0.069 119.8)",
-        "tonalRamp": [
-          "oklch(15% 0.069 119.8)",
-          "oklch(26.4% 0.069 119.8)",
-          "oklch(37.9% 0.069 119.8)",
-          "oklch(49.3% 0.069 119.8)",
-          "oklch(60.7% 0.069 119.8)",
-          "oklch(72.1% 0.069 119.8)",
-          "oklch(83.6% 0.069 119.8)",
-          "oklch(95% 0.069 119.8)"
-        ]
-      },
-      "lcd-ghost": {
-        "role": "neutral",
-        "displayName": "Ghost Pixel",
-        "canonical": "#b4c091",
-        "oklch": "oklch(78.6% 0.065 119.6)",
-        "tonalRamp": [
-          "oklch(15% 0.065 119.6)",
-          "oklch(26.4% 0.065 119.6)",
-          "oklch(37.9% 0.065 119.6)",
-          "oklch(49.3% 0.065 119.6)",
-          "oklch(60.7% 0.065 119.6)",
-          "oklch(72.1% 0.065 119.6)",
-          "oklch(83.6% 0.065 119.6)",
-          "oklch(95% 0.065 119.6)"
-        ]
-      },
-      "ink": {
-        "role": "neutral",
-        "displayName": "Plum Ink",
-        "canonical": "#2a1633",
-        "oklch": "oklch(24.2% 0.059 314.5)",
-        "tonalRamp": [
-          "oklch(15% 0.059 314.5)",
-          "oklch(26.4% 0.059 314.5)",
-          "oklch(37.9% 0.059 314.5)",
-          "oklch(49.3% 0.059 314.5)",
-          "oklch(60.7% 0.059 314.5)",
-          "oklch(72.1% 0.059 314.5)",
-          "oklch(83.6% 0.059 314.5)",
-          "oklch(95% 0.059 314.5)"
-        ]
-      },
-      "ink-2": {
-        "role": "neutral",
-        "displayName": "Raised Plum",
-        "canonical": "#3a2245",
-        "oklch": "oklch(29.9% 0.068 314.5)",
-        "tonalRamp": [
-          "oklch(15% 0.068 314.5)",
-          "oklch(26.4% 0.068 314.5)",
-          "oklch(37.9% 0.068 314.5)",
-          "oklch(49.3% 0.068 314.5)",
-          "oklch(60.7% 0.068 314.5)",
-          "oklch(72.1% 0.068 314.5)",
-          "oklch(83.6% 0.068 314.5)",
-          "oklch(95% 0.068 314.5)"
-        ]
-      },
-      "ink-soft": {
-        "role": "neutral",
-        "displayName": "Quiet Plum",
-        "canonical": "#5c3a63",
-        "oklch": "oklch(40.5% 0.079 320.6)",
-        "tonalRamp": [
-          "oklch(15% 0.079 320.6)",
-          "oklch(26.4% 0.079 320.6)",
-          "oklch(37.9% 0.079 320.6)",
-          "oklch(49.3% 0.079 320.6)",
-          "oklch(60.7% 0.079 320.6)",
-          "oklch(72.1% 0.079 320.6)",
-          "oklch(83.6% 0.079 320.6)",
-          "oklch(95% 0.079 320.6)"
-        ]
-      },
-      "cream": {
-        "role": "neutral",
-        "displayName": "Card Cream",
-        "canonical": "#fff3e2",
-        "oklch": "oklch(96.9% 0.026 76.8)",
-        "tonalRamp": [
-          "oklch(15% 0.026 76.8)",
-          "oklch(26.4% 0.026 76.8)",
-          "oklch(37.9% 0.026 76.8)",
-          "oklch(49.3% 0.026 76.8)",
-          "oklch(60.7% 0.026 76.8)",
-          "oklch(72.1% 0.026 76.8)",
-          "oklch(83.6% 0.026 76.8)",
-          "oklch(95% 0.026 76.8)"
-        ]
-      },
-      "pet-body": {
+      "ticket": {
         "role": "tertiary",
-        "displayName": "MUNCH Purple",
-        "canonical": "#8a5cff",
-        "oklch": "oklch(61.1% 0.229 291)",
+        "displayName": "Ticket Stock",
+        "canonical": "#e7d7a8",
+        "oklch": "oklch(88.1% 0.064 91)",
         "tonalRamp": [
-          "oklch(15% 0.229 291)",
-          "oklch(26.4% 0.229 291)",
-          "oklch(37.9% 0.229 291)",
-          "oklch(49.3% 0.229 291)",
-          "oklch(60.7% 0.229 291)",
-          "oklch(72.1% 0.229 291)",
-          "oklch(83.6% 0.229 291)",
-          "oklch(95% 0.229 291)"
+          "oklch(15.0% 0.064 91)",
+          "oklch(26.4% 0.064 91)",
+          "oklch(37.9% 0.064 91)",
+          "oklch(49.3% 0.064 91)",
+          "oklch(60.7% 0.064 91)",
+          "oklch(72.1% 0.064 91)",
+          "oklch(83.6% 0.064 91)",
+          "oklch(95.0% 0.064 91)"
         ]
       },
-      "mouth": {
+      "ticket-band": {
         "role": "tertiary",
-        "displayName": "Inside the Mouth",
-        "canonical": "#4a1240",
-        "oklch": "oklch(29.6% 0.103 335.8)",
+        "displayName": "Ticket Band",
+        "canonical": "#2f6b4f",
+        "oklch": "oklch(47.9% 0.078 161)",
         "tonalRamp": [
-          "oklch(15% 0.103 335.8)",
-          "oklch(26.4% 0.103 335.8)",
-          "oklch(37.9% 0.103 335.8)",
-          "oklch(49.3% 0.103 335.8)",
-          "oklch(60.7% 0.103 335.8)",
-          "oklch(72.1% 0.103 335.8)",
-          "oklch(83.6% 0.103 335.8)",
-          "oklch(95% 0.103 335.8)"
+          "oklch(15.0% 0.078 161)",
+          "oklch(26.4% 0.078 161)",
+          "oklch(37.9% 0.078 161)",
+          "oklch(49.3% 0.078 161)",
+          "oklch(60.7% 0.078 161)",
+          "oklch(72.1% 0.078 161)",
+          "oklch(83.6% 0.078 161)",
+          "oklch(95.0% 0.078 161)"
+        ]
+      },
+      "ticket-ink": {
+        "role": "tertiary",
+        "displayName": "Ticket Ink",
+        "canonical": "#1d1814",
+        "oklch": "oklch(21.4% 0.011 61)",
+        "tonalRamp": [
+          "oklch(15.0% 0.011 61)",
+          "oklch(26.4% 0.011 61)",
+          "oklch(37.9% 0.011 61)",
+          "oklch(49.3% 0.011 61)",
+          "oklch(60.7% 0.011 61)",
+          "oklch(72.1% 0.011 61)",
+          "oklch(83.6% 0.011 61)",
+          "oklch(95.0% 0.011 61)"
         ]
       }
     },
-    "legacyAliases": {
-      "note": "Remapped shared names kept only for the full-log drawer and /memex. Not part of the public system; star-dim is the one alias used publicly, as footer text on plum.",
-      "map": {
-        "night": "ink",
-        "night-2": "ink-2",
-        "panel": "ink-2",
-        "panel-line": "ink-soft",
-        "star": "cream",
-        "star-dim": "#d9c3d6",
-        "paper": "cream",
-        "paper-shade": "#f3dfc6",
-        "grid": "shell",
-        "pen": "ink",
-        "pen-soft": "ink-soft",
-        "marker": "bubble-lo",
-        "marker-deep": "#8e1440",
-        "ring": "bubble",
-        "ring-hot": "sun",
-        "fuel": "jar",
-        "fuel-ink": "jar-ink",
-        "soot": "ink",
-        "char": "ink-2",
-        "wood": "ink-2",
-        "bark": "ink-soft",
-        "ember": "bubble",
-        "flame": "bubble",
-        "hot": "cream",
-        "ash": "#d9c3d6",
-        "ash-light": "cream",
-        "plaque": "cream",
-        "plaque-ink": "ink",
-        "cold": "jar"
-      },
-      "fonts": {
-        "--font-display": "Bagel Fat One",
-        "--font-sign": "Bagel Fat One",
-        "--font-pixel": "DotGothic16",
-        "--font-hand": "DotGothic16"
-      },
-      "helpers": [
-        ".paper",
-        ".plaque",
-        ".btn-pen",
-        ".btn-ring",
-        ".btn-ghost",
-        ".btn-coal",
-        ".sign-lettering"
-      ]
-    },
     "typographyMeta": {
-      "logo": {
-        "displayName": "Logo",
-        "purpose": "The MUNCH wordmark on the pack and finale: cream fill, 0.035em plum stroke, three-step plum extrusion."
-      },
       "display": {
-        "displayName": "Display",
-        "purpose": "Flat plum headings printed on cardboard (box back)."
+        "displayName": "Cast Plate Display",
+        "purpose": "STOKER wordmark, the finale line and 'Into the fire.'. Uppercase Jersey 10, line-height 0.82."
+      },
+      "headline": {
+        "displayName": "Section Headline",
+        "purpose": "Section titles in Jersey 10."
       },
       "title": {
-        "displayName": "Title",
-        "purpose": "Pack callouts and box-back panel titles."
-      },
-      "lcd-headline": {
-        "displayName": "LCD Headline",
-        "purpose": "Every chapter heading inside the screen."
-      },
-      "lcd-title": {
-        "displayName": "LCD Title",
-        "purpose": "Stage names, feeding steps, the jar."
-      },
-      "lcd-label": {
-        "displayName": "LCD Label",
-        "purpose": "Menu items, readouts, speech bubbles; uppercase."
+        "displayName": "Title / Reading",
+        "purpose": "Stop and station titles, ticket amounts, nameplate figures, live readings with tabular figures, the Buy label, the speech bubble."
       },
       "body": {
-        "displayName": "Body",
-        "purpose": "Explanation on card and screen, 44-48ch."
+        "displayName": "Dot-Matrix Body",
+        "purpose": "Running text in DotGothic16, steam at 85-90% or ash, 26-62ch."
       },
-      "body-strong": {
-        "displayName": "Body Strong",
-        "purpose": "Chip and nav labels."
+      "label": {
+        "displayName": "Pixel Stamp",
+        "purpose": "Tiny5 in-world stamps, field labels, quiet buttons, nav. Never a kicker above a heading."
       },
       "mono": {
-        "displayName": "Mono",
-        "purpose": "Contract and dead addresses, tx hashes, chain ID."
+        "displayName": "Chain Data",
+        "purpose": "JetBrains Mono for addresses, tx hashes and ticket serials only; the one non-pixel face."
       }
     },
     "shadows": [
       {
-        "name": "ink-outline",
-        "value": "0 0 0 3px #2a1633",
-        "purpose": "Every printed chip, panel, pill, sticker and speech bubble (4px on larger objects)."
+        "name": "plate",
+        "value": "inset 4px 4px 0 #2c2524, inset -4px -4px 0 #171414, 4px 0 0 #3a3230, -4px 0 0 #3a3230, 0 4px 0 #3a3230, 0 -4px 0 #3a3230, 0 12px 0 rgb(0 0 0 / 0.45)",
+        "purpose": "Riveted iron plates: lit top-left and shaded bottom-right 4px edges, notched seam border, hard 12px drop."
       },
       {
-        "name": "key-skirt",
-        "value": "0 0 0 4px #2a1633, inset 0 -6px 0 #c41f5c, inset 0 4px 0 rgba(255,255,255,0.4), 0 7px 0 4px #2a1633",
-        "purpose": "Buy key at rest; 9px on hover, 1px on press."
+        "name": "nameplate",
+        "value": "inset 0 4px 0 #ecc97a, inset 0 -4px 0 #8a6a24, 4px 0 0 #8a6a24, -4px 0 0 #8a6a24, 0 4px 0 #8a6a24, 0 -4px 0 #8a6a24, 0 12px 0 rgb(0 0 0 / 0.45)",
+        "purpose": "The brass nameplate, same notched pixel build in brass."
       },
       {
-        "name": "chip-skirt",
-        "value": "0 0 0 3px #2a1633, 0 4px 0 3px #2a1633",
-        "purpose": "Printed chips; collapses to the outline on press."
+        "name": "buy-ledge",
+        "value": "inset 0 4px 0 #ff7a45, inset 0 -4px 0 #b8321a, 4px 0 0 #0f0d0d, -4px 0 0 #0f0d0d, 0 -4px 0 #0f0d0d, 0 4px 0 #b8321a, 0 8px 0 #0f0d0d",
+        "purpose": "The Buy button: lit and shaded rows, soot outline, an ember-lo ledge it stands on."
       },
       {
-        "name": "logo-extrusion",
-        "value": "0.03em 0.03em 0 #2a1633, 0.06em 0.06em 0 #2a1633, 0.09em 0.09em 0 #2a1633",
-        "purpose": "text-shadow for the wordmark only."
+        "name": "sprite-drop",
+        "value": "drop-shadow(6px 8px 0 rgba(0,0,0,0.55))",
+        "purpose": "Hard drop under the gauge sprite."
       },
       {
-        "name": "card-print-edge",
-        "value": "inset 0 0 0 4px #2a1633, inset 0 6px 0 4px rgba(255,255,255,0.18)",
-        "purpose": "Cardboard cards."
+        "name": "live-ring",
+        "value": "0 0 0 4px #ff5a1f, 0 12px 0 rgba(0,0,0,0.5)",
+        "purpose": "The BurnAlert; the next-run outcome takes the 4px ember ring alone."
       },
       {
-        "name": "blister",
-        "value": "inset 0 0 0 3px rgba(255,255,255,0.6), inset 0 -14px 24px rgba(255,255,255,0.16), 0 18px 30px -18px rgba(42,22,51,0.7)",
-        "purpose": "The clear plastic bubble."
+        "name": "firebox-spill",
+        "value": "radial-gradient(closest-side, rgb(255 110 30 / var(--heat)), transparent)",
+        "purpose": "The one soft light: a glow layer 48px outside the stepped arch; --heat runs 0.30 to 0.70 with the gauge."
       },
       {
-        "name": "lcd-recess",
-        "value": "inset 3px 3px 0 rgba(47,58,34,0.28)",
-        "purpose": "The device's own screen."
-      },
-      {
-        "name": "lcd-bezel",
-        "value": "inset 12px 0 0 #3d2147, inset -12px 0 0 #3d2147, inset 18px 0 0 rgba(47,58,34,0.22), inset -18px 0 0 rgba(47,58,34,0.22)",
-        "purpose": "Edge bezel over the in-screen chapter run."
-      },
-      {
-        "name": "sticker-lift",
-        "value": "0 0 0 4px #2a1633, 0 10px 18px -8px rgba(42,22,51,0.6)",
-        "purpose": "Price sticker peeled off the plastic."
-      },
-      {
-        "name": "focus",
-        "value": "outline: 3px solid #2a1633; outline-offset: 3px; box-shadow: 0 0 0 6px #ffd166",
-        "purpose": "Global :focus-visible."
+        "name": "heat-bands",
+        "value": "radial-gradient(ellipse at 50% 55%, #ffe08a 0 12%, #ffa630 12% 26%, #ff5a1f 26% 44%, #b8321a 44% 64%, #7a1c0c 64%)",
+        "purpose": "The heat that fills the screen after the firebox push: posterised hard rings, not a smooth gradient."
       }
     ],
     "motion": [
       {
-        "name": "press",
-        "value": "transform 0.08s steps(2), box-shadow 0.08s steps(2)",
-        "purpose": "Key and chip press travel."
+        "name": "pixel-unit",
+        "value": "--px: 4px",
+        "purpose": "One art pixel of UI chrome: hover lift, press depth, borders, rivets and corner notches all move in this unit."
       },
       {
-        "name": "fill-swap",
-        "value": "background-color 0.12s steps(2)",
-        "purpose": "Hover fills on chips and LCD keys."
+        "name": "ui-steps",
+        "value": "0.1s steps(2); 0.3s steps(3)",
+        "purpose": "CSS transitions on buttons and fields (steps(2)) and the nav underline and mark tilt (steps(3)). No smooth curves."
       },
       {
-        "name": "px-bob",
-        "value": "1.2s steps(2) infinite",
-        "purpose": "Idle pet bob."
+        "name": "firebox-push",
+        "value": "ScrollTrigger pin, end +=120%, scrub, min-width 768px, motion-safe; zoom steps(24), door steps(4), copy/gauge steps(6), heat line steps(5)",
+        "purpose": "Signature: zoom into the firebox, door swings, banded heat fills, 'Into the fire.'."
       },
       {
-        "name": "px-hop",
-        "value": "0.3s steps(2) infinite alternate",
-        "purpose": "Excited hop."
+        "name": "run-pan",
+        "value": "ScrollTrigger pin, horizontal track, scrub 0.8, min-width 1024px, motion-safe; stop art steps(4)",
+        "purpose": "TheRun stops pan while the engine rolls on the rails; stacked otherwise."
       },
       {
-        "name": "px-wobble",
-        "value": "2.4s steps(1) infinite",
-        "purpose": "Egg wobble from the base."
+        "name": "route-draw",
+        "value": "scrub 0.5, top 75% to bottom 45%, snapped to 1/40",
+        "purpose": "TheLine brass route draws to the live train position in visible steps."
+      },
+      {
+        "name": "entrance",
+        "value": "steps(5) to steps(8), 0.6-0.9s, small stagger",
+        "purpose": "Hero intro, stops, engines, tickets (clip-path inset, steps(6)), pay rows, story lines, coal-lump finale words (steps(5)), the pass (steps(8)), the BurnAlert."
+      },
+      {
+        "name": "needle-tick",
+        "value": "up to 9deg every 70ms, no overshoot",
+        "purpose": "Gauge needle ticks toward the reading like a sprite; jumps under reduced motion."
+      },
+      {
+        "name": "sprite-rates",
+        "value": "fire 20fps; locomotive 4 frames at 8fps",
+        "purpose": "Canvas art tick rates; both sleep off screen and draw a still frame under reduced motion."
+      },
+      {
+        "name": "split-flap",
+        "value": "4+ random glyphs at 55ms per tile, 18ms stagger",
+        "purpose": "Cab board tiles on value change; skipped under reduced motion."
       },
       {
         "name": "reink",
-        "value": "0.35s steps(4)",
-        "purpose": "LCD readout redraw on value change."
-      },
-      {
-        "name": "reveal",
-        "value": "steps(3) to steps(5), 0.3-0.5s, staggered",
-        "purpose": "Log rows and box panels entering."
-      },
-      {
-        "name": "camera",
-        "value": "power2.out, scrubbed",
-        "purpose": "Pack zoom into the LCD and box flip only."
-      },
-      {
-        "name": "ease-out-expo",
-        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
-        "purpose": "Declared theme ease for smooth non-pixel moves."
-      },
-      {
-        "name": "reduced-motion",
-        "value": "prefers-reduced-motion: reduce",
-        "purpose": "Loops, pins and the zoom are off; the page reads as a still sequence."
+        "value": "0.3s steps(3), translateY 0.25em to 0",
+        "purpose": "Changed digits of a live number, after a steps(6) count-up."
       }
     ],
     "breakpoints": [
@@ -517,143 +457,152 @@
   },
   "components": [
     {
-      "name": "Buy Key",
+      "name": "Buy Button",
       "kind": "button",
       "refersTo": "button-buy",
-      "description": "The one bubblegum key: buy $MUNCH. Lifts on hover, presses into the card.",
-      "html": "<a class=\"ds-btn-buy\" href=\"#\">buy $MUNCH <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"><path d=\"M7 17 17 7M8 7h9v9\"/></svg></a>",
-      "css": ".ds-btn-buy{display:inline-flex;align-items:center;gap:.55rem;border-radius:9999px;background:#ff3d7f;color:#2a1633;font-family:'Bagel Fat One',sans-serif;font-size:1.35rem;padding:16px 32px;text-decoration:none;box-shadow:0 0 0 4px #2a1633,inset 0 -6px 0 #c41f5c,inset 0 4px 0 rgba(255,255,255,.4),0 7px 0 4px #2a1633;transition:transform .08s steps(2),box-shadow .08s steps(2),background-color .12s steps(2)}.ds-btn-buy:hover{background:#ff5c93;transform:translateY(-2px);box-shadow:0 0 0 4px #2a1633,inset 0 -6px 0 #c41f5c,inset 0 4px 0 rgba(255,255,255,.4),0 9px 0 4px #2a1633}.ds-btn-buy:active{transform:translateY(6px);box-shadow:0 0 0 4px #2a1633,inset 0 -3px 0 #c41f5c,inset 0 4px 0 rgba(255,255,255,.4),0 1px 0 4px #2a1633}.ds-btn-buy:focus-visible{outline:3px solid #2a1633;outline-offset:3px;box-shadow:0 0 0 6px #ffd166}"
+      "description": "The one primary: a firebox handle you pull, standing on a pixel ledge. Nav, hero and finale only.",
+      "html": "<a class=\"ds-btn-buy\" href=\"#\">BUY $COAL <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"square\" aria-hidden=\"true\"><path d=\"M7 7h10v10\"/><path d=\"M7 17 17 7\"/></svg></a>",
+      "css": ".ds-btn-buy{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;margin:4px;padding:1rem 1.75rem;border-radius:0;background:var(--color-ember, #ff5a1f);font-family:\"Jersey 10\",\"Courier New\",monospace;font-size:1.4rem;line-height:1;letter-spacing:.04em;text-transform:uppercase;color:var(--color-soot, #0f0d0d);text-decoration:none;box-shadow:inset 0 4px 0 var(--color-ember-hi, #ff7a45),inset 0 -4px 0 var(--color-ember-lo, #b8321a),4px 0 0 var(--color-soot, #0f0d0d),-4px 0 0 var(--color-soot, #0f0d0d),0 -4px 0 var(--color-soot, #0f0d0d),0 4px 0 var(--color-ember-lo, #b8321a),0 8px 0 var(--color-soot, #0f0d0d);transition:transform .1s steps(2),filter .1s steps(2)}.ds-btn-buy:hover{filter:brightness(1.12);transform:translateY(-4px)}.ds-btn-buy:active{transform:translateY(4px)}.ds-btn-buy:focus-visible{outline:4px solid var(--color-ember, #ff5a1f);outline-offset:4px}"
     },
     {
-      "name": "Printed Chip",
+      "name": "Chip Button",
       "kind": "button",
       "refersTo": "button-chip",
-      "description": "Cream key printed on the card: chart, log, feed it.",
-      "html": "<button class=\"ds-btn-chip\">chart</button>",
-      "css": ".ds-btn-chip{display:inline-flex;align-items:center;gap:.45rem;border:0;border-radius:9999px;background:#fff3e2;color:#2a1633;font-family:'Gabarito Variable','Gabarito',system-ui,sans-serif;font-weight:700;font-size:.95rem;padding:.6rem 1.05rem;cursor:pointer;box-shadow:0 0 0 3px #2a1633,0 4px 0 3px #2a1633;transition:transform .08s steps(2),box-shadow .08s steps(2),background-color .12s steps(2)}.ds-btn-chip:hover{background:#ffd166}.ds-btn-chip:active{transform:translateY(4px);box-shadow:0 0 0 3px #2a1633}.ds-btn-chip:focus-visible{outline:3px solid #2a1633;outline-offset:3px;box-shadow:0 0 0 6px #ffd166}"
+      "description": "Quiet key: steam pixel stamp on iron, a 4px seam border that turns brass on hover. Chart, copy, links.",
+      "html": "<button class=\"ds-btn-chip\" type=\"button\">CHART <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"square\" aria-hidden=\"true\"><path d=\"M7 7h10v10\"/><path d=\"M7 17 17 7\"/></svg></button>",
+      "css": ".ds-btn-chip{display:inline-flex;align-items:center;gap:.45rem;padding:.6rem 1rem;border:0;border-radius:0;background:var(--color-iron, #171414);font-family:Tiny5,\"Courier New\",monospace;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:var(--color-steam, #eee9e2);box-shadow:inset 0 0 0 4px var(--color-seam, #3a3230);cursor:pointer;transition:box-shadow .1s steps(2),color .1s steps(2)}.ds-btn-chip:hover{color:var(--color-brass-hi, #ecc97a);box-shadow:inset 0 0 0 4px var(--color-brass-lo, #8a6a24)}.ds-btn-chip:active{transform:translateY(4px)}.ds-btn-chip:focus-visible{outline:4px solid var(--color-ember, #ff5a1f);outline-offset:4px}"
     },
     {
-      "name": "Dark Chip",
-      "kind": "button",
-      "refersTo": "button-chip-dark",
-      "description": "Cream-ringed key for actions on the plum ground.",
-      "html": "<div style=\"background:#2a1633;padding:24px\"><button class=\"ds-btn-dark\">open the full log</button></div>",
-      "css": ".ds-btn-dark{display:inline-flex;align-items:center;gap:.5rem;border:0;border-radius:9999px;background:transparent;padding:1rem 1.6rem;font-family:'Gabarito Variable','Gabarito',system-ui,sans-serif;font-weight:700;font-size:1rem;color:#fff3e2;cursor:pointer;box-shadow:inset 0 0 0 3px #fff3e2;transition:background-color .12s steps(2),color .12s steps(2)}.ds-btn-dark:hover{background:#fff3e2;color:#2a1633}.ds-btn-dark:focus-visible{outline:3px solid #2a1633;outline-offset:3px;box-shadow:0 0 0 6px #ffd166}"
-    },
-    {
-      "name": "LCD Key",
-      "kind": "button",
-      "refersTo": "button-lcd",
-      "description": "A square key drawn on the screen; inverts on hover.",
-      "html": "<div class=\"ds-lcd\" style=\"padding:24px\"><button class=\"ds-btn-lcd\">open full log</button></div>",
-      "css": ".ds-lcd{background-color:#c4cfa1;background-image:linear-gradient(#b4c091 1px,transparent 1px),linear-gradient(90deg,#b4c091 1px,transparent 1px);background-size:4px 4px;color:#2f3a22}.ds-btn-lcd{display:inline-flex;align-items:center;gap:.5rem;border:3px solid #2f3a22;background:transparent;padding:.45rem .9rem;font-family:'DotGothic16',monospace;font-size:.95rem;text-transform:uppercase;color:#2f3a22;cursor:pointer;transition:background-color .12s steps(2),color .12s steps(2)}.ds-btn-lcd:hover{background:#2f3a22;color:#c4cfa1}.ds-btn-lcd:focus-visible{outline:3px solid #2a1633;outline-offset:3px;box-shadow:0 0 0 6px #ffd166}"
-    },
-    {
-      "name": "CA Pill",
+      "name": "Contract Address Field",
       "kind": "input",
       "refersTo": "ca-field",
-      "description": "The contract address printed in a cream pill with a copy key.",
-      "html": "<div class=\"ds-ca\"><span class=\"ds-ca-addr\">0x7a3f…c41d</span><button class=\"ds-ca-copy\">copy</button></div>",
-      "css": ".ds-ca{display:flex;align-items:center;justify-content:space-between;gap:.75rem;border-radius:9999px;background:#fff3e2;padding:.4rem .45rem .4rem 1.1rem;box-shadow:0 0 0 3px #2a1633;max-width:22rem;transition:background-color .12s steps(2)}.ds-ca:hover{background:#fff9f1}.ds-ca-addr{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:.85rem;color:#2a1633}.ds-ca-copy{border:0;border-radius:9999px;background:#2a1633;color:#fff3e2;font-family:'Gabarito Variable','Gabarito',system-ui,sans-serif;font-weight:700;padding:.45rem .9rem;cursor:pointer}.ds-ca-copy:hover{background:#ffd166;color:#2a1633}.ds-ca-copy:focus-visible{outline:3px solid #2a1633;outline-offset:3px;box-shadow:0 0 0 6px #ffd166}"
+      "description": "The CA on an iron strip: pixel stamp label, mono address, square soot copy key with an ember glyph.",
+      "html": "<button class=\"ds-ca\" type=\"button\"><span class=\"ds-ca-text\"><span class=\"ds-ca-label\">CONTRACT ADDRESS</span><span class=\"ds-ca-addr\">0x7a3f9c2e1b4d5a6f8e0c9b1a2d3e4f5a6b7c8d9e</span></span><span class=\"ds-ca-key\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"square\" aria-hidden=\"true\"><rect x=\"8\" y=\"8\" width=\"14\" height=\"14\"/><path d=\"M4 16H2V2h14v2\"/></svg></span></button>",
+      "css": ".ds-ca{display:flex;align-items:center;justify-content:space-between;gap:.75rem;width:100%;max-width:34rem;padding:.45rem .45rem .45rem 1rem;border:0;border-radius:0;background:var(--color-iron, #171414);box-shadow:inset 0 0 0 4px var(--color-seam, #3a3230);text-align:left;cursor:pointer;transition:box-shadow .1s steps(2)}.ds-ca:hover{box-shadow:inset 0 0 0 4px var(--color-brass-lo, #8a6a24)}.ds-ca:focus-visible{outline:4px solid var(--color-ember, #ff5a1f);outline-offset:4px}.ds-ca-text{min-width:0}.ds-ca-label{display:block;font-family:Tiny5,\"Courier New\",monospace;font-size:.68rem;letter-spacing:.06em;color:var(--color-ash, #aaa098)}.ds-ca-addr{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-family:\"JetBrains Mono\",ui-monospace,monospace;font-size:.85rem;color:var(--color-steam, #eee9e2)}.ds-ca-key{display:flex;align-items:center;justify-content:center;flex-shrink:0;width:2.25rem;height:2.25rem;background:var(--color-soot, #0f0d0d);color:var(--color-ember, #ff5a1f)}"
     },
     {
-      "name": "Header",
+      "name": "Section Nav",
       "kind": "nav",
-      "refersTo": "header",
-      "description": "Plum header: wordmark, lowercase links turning sun on hover, round sound toggle.",
-      "html": "<header class=\"ds-nav\"><span class=\"ds-nav-logo\">MUNCH</span><nav class=\"ds-nav-links\"><a href=\"#\">life</a><a href=\"#\">feeding</a><a href=\"#\">meals</a><a href=\"#\">story</a></nav><button class=\"ds-nav-sound\" aria-label=\"Sound\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M11 5 6 9H2v6h4l5 4V5Z\"/><path d=\"M15.5 8.5a5 5 0 0 1 0 7\"/></svg></button></header>",
-      "css": ".ds-nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:72px;padding:0 40px;background:#2a1633;color:#fff3e2}.ds-nav-logo{font-family:'Bagel Fat One',sans-serif;font-size:1.55rem;line-height:1}.ds-nav-links{display:flex;gap:1.5rem;font-family:'Gabarito Variable','Gabarito',system-ui,sans-serif;font-weight:600;font-size:.95rem}.ds-nav-links a{color:#fff3e2;text-decoration:none}.ds-nav-links a:hover{color:#ffd166}.ds-nav-links a:focus-visible{outline:3px solid #2a1633;outline-offset:3px;box-shadow:0 0 0 6px #ffd166}.ds-nav-sound{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border:0;border-radius:9999px;background:transparent;color:#fff3e2;box-shadow:inset 0 0 0 2px #5c3a63;cursor:pointer}.ds-nav-sound:hover{color:#ffd166;box-shadow:inset 0 0 0 2px #ffd166}"
+      "refersTo": "nav-link-active",
+      "description": "Pixel stamp chapter links; the current chapter turns brass with a brass rule that steps in.",
+      "html": "<nav class=\"ds-nav\"><a href=\"#\">THE RUN</a><a href=\"#\" class=\"is-active\" aria-current=\"location\">THE LINE</a><a href=\"#\">LOGBOOK</a><a href=\"#\">CAB</a><a href=\"#\">STORY</a></nav>",
+      "css": ".ds-nav{display:flex;flex-wrap:wrap;gap:1.75rem;padding:1.25rem 1.5rem;background:var(--color-soot, #0f0d0d)}.ds-nav a{position:relative;padding:.25rem 0;font-family:Tiny5,\"Courier New\",monospace;font-size:.85rem;letter-spacing:.06em;color:var(--color-steam, #eee9e2);text-decoration:none;transition:color .1s steps(2)}.ds-nav a::after{content:\"\";position:absolute;left:0;right:0;bottom:-2px;height:2px;background:var(--color-brass, #d4a648);transform:scaleX(0);transform-origin:left;transition:transform .3s steps(3)}.ds-nav a:hover,.ds-nav a.is-active{color:var(--color-brass-hi, #ecc97a)}.ds-nav a.is-active::after{transform:scaleX(1)}.ds-nav a:focus-visible{outline:4px solid var(--color-ember, #ff5a1f);outline-offset:4px}"
     },
     {
-      "name": "LCD Icon Menu",
-      "kind": "nav",
-      "refersTo": "lcd-menu-item-active",
-      "description": "The screen's sticky chapter strip; the current menu is inverted.",
-      "html": "<ol class=\"ds-lcdmenu\"><li><a href=\"#\">LIFE</a></li><li><a href=\"#\" class=\"on\">FEEDING</a></li><li><a href=\"#\">MEALS</a></li><li><a href=\"#\">JAR</a></li><li><a href=\"#\">STATUS</a></li></ol>",
-      "css": ".ds-lcdmenu{display:flex;gap:4px;list-style:none;margin:0;padding:6px 8px;background:#c4cfa1;border-bottom:4px solid #2f3a22}.ds-lcdmenu li{flex:1}.ds-lcdmenu a{display:flex;justify-content:center;padding:6px 8px;font-family:'DotGothic16',monospace;font-size:.9rem;text-transform:uppercase;text-decoration:none;color:#2f3a22;transition:background-color .1s steps(2)}.ds-lcdmenu a:hover{background:#b4c091}.ds-lcdmenu a.on{background:#2f3a22;color:#c4cfa1}.ds-lcdmenu a:focus-visible{outline:3px solid #2a1633;outline-offset:3px;box-shadow:0 0 0 6px #ffd166}"
-    },
-    {
-      "name": "Cardboard Card",
+      "name": "Iron Plate",
       "kind": "card",
-      "refersTo": "card-cardboard",
-      "description": "Tangerine printed stock with plum print edge: the pack and the box back.",
-      "html": "<section class=\"ds-cardboard\"><h2 class=\"ds-display\">How MUNCH got in the box</h2><p>Read the back before you feed it. It only goes one way.</p></section>",
-      "css": ".ds-cardboard{border-radius:22px;background-color:#ff7a2f;color:#2a1633;padding:40px;box-shadow:inset 0 0 0 4px #2a1633,inset 0 6px 0 4px rgba(255,255,255,.18)}.ds-display{margin:0 0 12px;font-family:'Bagel Fat One',sans-serif;font-weight:400;font-size:2.6rem;line-height:1}.ds-cardboard p{margin:0;font-family:'Gabarito Variable','Gabarito',system-ui,sans-serif;font-weight:600;font-size:1.05rem}"
+      "refersTo": "iron-plate",
+      "description": "The base container: notched pixel plate, square rivets, lit and shaded 4px edges, hard 12px drop.",
+      "html": "<article class=\"ds-plate\"><h3 class=\"ds-plate-title\">TRADES BUILD PRESSURE</h3><p class=\"ds-plate-body\">Every buy or sell pays a small creator fee in ETH. It collects in the fee escrow, and the needle climbs.</p><div class=\"ds-plate-reading\"><span class=\"ds-plate-label\">IN THE GAUGE NOW</span><span class=\"ds-plate-value\">0.0042 ETH · 42%</span></div></article>",
+      "css": ".ds-plate{position:relative;max-width:30rem;margin:4px;padding:2rem;border-radius:0;color:var(--color-steam, #eee9e2);background:linear-gradient(var(--color-rivet, #5c514c),var(--color-rivet, #5c514c)) 12px 12px/4px 4px no-repeat,linear-gradient(var(--color-rivet, #5c514c),var(--color-rivet, #5c514c)) calc(100% - 12px) 12px/4px 4px no-repeat,linear-gradient(var(--color-rivet, #5c514c),var(--color-rivet, #5c514c)) 12px calc(100% - 12px)/4px 4px no-repeat,linear-gradient(var(--color-rivet, #5c514c),var(--color-rivet, #5c514c)) calc(100% - 12px) calc(100% - 12px)/4px 4px no-repeat,var(--color-plate, #211c1b);box-shadow:inset 4px 4px 0 var(--color-plate-hi, #2c2524),inset -4px -4px 0 var(--color-iron, #171414),4px 0 0 var(--color-seam, #3a3230),-4px 0 0 var(--color-seam, #3a3230),0 4px 0 var(--color-seam, #3a3230),0 -4px 0 var(--color-seam, #3a3230),0 12px 0 rgb(0 0 0/.45)}.ds-plate-title{margin:0;font-family:\"Jersey 10\",\"Courier New\",monospace;font-weight:400;font-size:2.4rem;line-height:.82;letter-spacing:.01em;text-transform:uppercase}.ds-plate-body{margin:.75rem 0 0;font-family:DotGothic16,\"Courier New\",monospace;font-size:1rem;line-height:1.6;color:rgb(238 233 226/.85)}.ds-plate-reading{margin-top:1.5rem;padding-top:1rem;border-top:1px solid var(--color-seam, #3a3230)}.ds-plate-label{display:block;font-family:Tiny5,\"Courier New\",monospace;font-size:.72rem;letter-spacing:.06em;color:var(--color-ash, #aaa098)}.ds-plate-value{display:block;margin-top:.25rem;font-family:\"Jersey 10\",\"Courier New\",monospace;font-size:1.7rem;font-variant-numeric:tabular-nums;color:var(--color-brass-hi, #ecc97a)}"
     },
     {
-      "name": "LCD Window",
+      "name": "Brass Nameplate",
       "kind": "card",
-      "refersTo": "lcd-window",
-      "description": "A framed region on the screen with an inverted title bar: meal log, status.",
-      "html": "<div class=\"ds-lcdwin\"><div class=\"ds-lcdwin-bar\">MEALS · 12</div><div class=\"ds-lcdwin-body\"><span>#11 ATE 1.2M $MUNCH</span><span class=\"ds-lcdwin-tx\">0x91…ab</span></div></div>",
-      "css": ".ds-lcdwin{background:#c4cfa1;box-shadow:0 0 0 4px #2f3a22;color:#2f3a22;font-family:'DotGothic16',monospace}.ds-lcdwin-bar{background:#2f3a22;color:#c4cfa1;padding:10px 16px;font-size:.9rem;text-transform:uppercase}.ds-lcdwin-body{display:flex;justify-content:space-between;padding:16px;font-size:.95rem}.ds-lcdwin-tx{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:.8rem}"
+      "refersTo": "nameplate",
+      "description": "Cast brass with a lit top row and notched brass-lo border, for the live burned total and the full-gauge threshold.",
+      "html": "<div class=\"ds-nameplate\"><p class=\"ds-np-figure\">12,480,000 <span>$COAL BURNED</span></p><p class=\"ds-np-line\"><strong>1.24%</strong> of the supply, in <strong>9</strong> fires, gone to 0x…dEaD.</p></div>",
+      "css": ".ds-nameplate{max-width:30rem;margin:4px;padding:1rem 1.5rem;border-radius:0;background:var(--color-brass, #d4a648);color:var(--color-ticket-ink, #1d1814);box-shadow:inset 0 4px 0 var(--color-brass-hi, #ecc97a),inset 0 -4px 0 var(--color-brass-lo, #8a6a24),4px 0 0 var(--color-brass-lo, #8a6a24),-4px 0 0 var(--color-brass-lo, #8a6a24),0 4px 0 var(--color-brass-lo, #8a6a24),0 -4px 0 var(--color-brass-lo, #8a6a24),0 12px 0 rgb(0 0 0/.45)}.ds-np-figure{margin:0;font-family:\"Jersey 10\",\"Courier New\",monospace;font-size:3.6rem;line-height:.82;text-transform:uppercase;font-variant-numeric:tabular-nums}.ds-np-figure span{font-size:1.4rem}.ds-np-line{margin:.5rem 0 0;font-family:DotGothic16,\"Courier New\",monospace;font-size:1rem}"
+    },
+    {
+      "name": "Logbook Ticket",
+      "kind": "card",
+      "refersTo": "ticket",
+      "description": "Edmondson card ticket: buff stock, stepped pixel corners, green band, square punched hole. One per real burn.",
+      "html": "<div class=\"ds-ticket\"><div class=\"ds-ticket-top\"><span class=\"ds-ticket-stamp\">FIREBOX, SINGLE</span><span class=\"ds-ticket-no\">No. 0007</span></div><div class=\"ds-ticket-amt\">1.2M <span>$COAL</span></div><div class=\"ds-ticket-foot\"><span>Oct 18, 14:02</span><a href=\"#\">0x9f3a…c21b</a></div></div>",
+      "css": ".ds-ticket{position:relative;width:17.5rem;min-height:9.5rem;display:flex;flex-direction:column;justify-content:space-between;padding:1rem 3.5rem 1rem 2.5rem;rotate:-1deg;color:var(--color-ticket-ink, #1d1814);background:linear-gradient(var(--color-soot, #0f0d0d),var(--color-soot, #0f0d0d)) calc(100% - 20px) 50%/12px 12px no-repeat,linear-gradient(90deg,transparent 0 16px,var(--color-ticket-band, #2f6b4f) 16px 24px,transparent 24px),var(--color-ticket, #e7d7a8);clip-path:polygon(0 8px,4px 8px,4px 4px,8px 4px,8px 0,calc(100% - 8px) 0,calc(100% - 8px) 4px,calc(100% - 4px) 4px,calc(100% - 4px) 8px,100% 8px,100% calc(100% - 8px),calc(100% - 4px) calc(100% - 8px),calc(100% - 4px) calc(100% - 4px),calc(100% - 8px) calc(100% - 4px),calc(100% - 8px) 100%,8px 100%,8px calc(100% - 4px),4px calc(100% - 4px),4px calc(100% - 8px),0 calc(100% - 8px));font-family:DotGothic16,\"Courier New\",monospace}.ds-ticket-top{display:flex;justify-content:space-between;align-items:baseline;gap:.75rem}.ds-ticket-stamp{font-family:Tiny5,\"Courier New\",monospace;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--color-ticket-band, #2f6b4f)}.ds-ticket-no{font-family:\"JetBrains Mono\",ui-monospace,monospace;font-size:.78rem}.ds-ticket-amt{font-family:\"Jersey 10\",\"Courier New\",monospace;font-size:2.3rem;line-height:.82;font-variant-numeric:tabular-nums}.ds-ticket-amt span{font-family:Tiny5,\"Courier New\",monospace;font-size:.8rem;letter-spacing:.06em}.ds-ticket-foot{display:flex;justify-content:space-between;font-size:.82rem}.ds-ticket-foot a{font-family:\"JetBrains Mono\",ui-monospace,monospace;font-size:.78rem;color:var(--color-ticket-ink, #1d1814);text-decoration-color:rgb(29 24 20/.4)}.ds-ticket-foot a:focus-visible{outline:4px solid var(--color-ember, #ff5a1f);outline-offset:4px}"
+    },
+    {
+      "name": "Split-Flap Readout",
+      "kind": "custom",
+      "refersTo": "flap",
+      "description": "Cab board tiles in pixel plate type; on a value change each tile scrambles through letters before landing.",
+      "html": "<div class=\"ds-flapboard\" aria-label=\"Watching\"><span class=\"ds-flap\">W</span><span class=\"ds-flap\">A</span><span class=\"ds-flap\">T</span><span class=\"ds-flap\">C</span><span class=\"ds-flap\">H</span><span class=\"ds-flap\">I</span><span class=\"ds-flap\">N</span><span class=\"ds-flap\">G</span></div>",
+      "css": ".ds-flapboard{display:inline-flex;gap:2px;padding:1rem;background:var(--color-plate, #211c1b);font-family:\"Jersey 10\",\"Courier New\",monospace;font-size:2.2rem}.ds-flap{position:relative;display:inline-block;min-width:.7em;padding:.06em .06em 0;background:linear-gradient(180deg,#1e1a19 0 50%,#151211 50% 100%);color:var(--color-steam, #eee9e2);text-align:center}.ds-flap::after{content:\"\";position:absolute;left:0;right:0;top:50%;height:2px;background:var(--color-soot, #0f0d0d)}"
+    },
+    {
+      "name": "Live Status",
+      "kind": "chip",
+      "refersTo": "button-chip",
+      "description": "Ember is for live and next only: the cab's blinking live square and the burn kind tag beside a quiet tag.",
+      "html": "<div class=\"ds-live\"><span class=\"ds-live-dot\"></span><span class=\"ds-live-label\">RIGHT NOW</span><span class=\"ds-tag ds-tag-burn\">BURN</span><span class=\"ds-tag\">CLAIM</span></div>",
+      "css": ".ds-live{display:flex;align-items:center;gap:.6rem;padding:1rem;background:var(--color-plate, #211c1b)}.ds-live-dot{width:10px;height:10px;background:var(--color-ember, #ff5a1f);animation:ds-blink .8s steps(1) infinite}@keyframes ds-blink{50%{opacity:.25}}@media (prefers-reduced-motion:reduce){.ds-live-dot{animation:none}}.ds-live-label,.ds-tag{font-family:Tiny5,\"Courier New\",monospace;letter-spacing:.06em;text-transform:uppercase}.ds-live-label{font-size:.8rem;color:var(--color-ash, #aaa098)}.ds-tag{padding:.15rem .4rem;font-size:.68rem;background:var(--color-soot, #0f0d0d);color:var(--color-steam, #eee9e2)}.ds-tag-burn{background:var(--color-ember, #ff5a1f);color:var(--color-soot, #0f0d0d)}"
     },
     {
       "name": "Speech Bubble",
       "kind": "custom",
-      "refersTo": "speech-bubble",
-      "description": "MUNCH's deadpan line, printed beside the feed key.",
-      "html": "<span class=\"ds-speech\">MUNCH: “nom.”</span>",
-      "css": ".ds-speech{position:relative;display:inline-block;margin-left:12px;border-radius:14px;background:#fff3e2;padding:.45rem .85rem;font-family:'DotGothic16',monospace;font-size:.95rem;color:#2a1633;box-shadow:0 0 0 3px #2a1633}.ds-speech::before{content:'';position:absolute;left:-9px;top:50%;width:10px;height:10px;translate:0 -50%;background:#2a1633;clip-path:polygon(100% 0,100% 100%,0 50%)}"
+      "refersTo": "speech",
+      "description": "Stoker's shout over the firebox: square steam bubble, soot pixel outline, stepped tail.",
+      "html": "<div class=\"ds-speech-wrap\"><span class=\"ds-speech\">MORE COAL!</span></div>",
+      "css": ".ds-speech-wrap{padding:1.5rem 1.5rem 2rem;background:linear-gradient(180deg,#8f1d07 0 50%,#d9400a 50%)}.ds-speech{position:relative;display:inline-block;margin:4px;background:var(--color-steam, #eee9e2);padding:.35rem .8rem .25rem;font-family:\"Jersey 10\",\"Courier New\",monospace;font-size:1.5rem;line-height:1;text-transform:uppercase;color:var(--color-soot, #0f0d0d);box-shadow:4px 0 0 var(--color-soot, #0f0d0d),-4px 0 0 var(--color-soot, #0f0d0d),0 4px 0 var(--color-soot, #0f0d0d),0 -4px 0 var(--color-soot, #0f0d0d)}.ds-speech::after{content:\"\";position:absolute;left:50%;top:100%;width:12px;height:8px;background:linear-gradient(var(--color-steam, #eee9e2),var(--color-steam, #eee9e2)) 0 0/12px 4px no-repeat,linear-gradient(var(--color-steam, #eee9e2),var(--color-steam, #eee9e2)) 0 4px/4px 4px no-repeat}"
     }
   ],
   "narrative": {
-    "northStar": "The Toy on the Peg",
-    "overview": "The page is the toy, not a page about a toy. You meet MUNCH the way you would in a shop: a tangerine cardboard backer card with a die-cut hang tab, a clear blister bubble, and inside it a pixel egg-shaped handheld whose screen already shows the live pet, what it has eaten and how hungry it is. Scrolling lifts the device out and dives into its LCD; from there every chapter (life, feeding, meals, jar, status) is a menu on the handheld's grey-green screen, wayfound by the screen's own sticky icon strip. The box then turns to its printed back for the story, and MUNCH opens its mouth and eats the screen.\n\nThree materials carry everything: **printed tangerine cardboard** with plum ink outlines, **the LCD** (two inks plus a ghost-pixel matrix, no colour, no radius), and **candy plastic** for the keys (bubblegum for buy, sun-yellow for secondary keys). Plum ink is the world's outline and its night: it frames the pack, draws every sprite edge, and is the dark the pack hangs against. Density is toy-box generous on the card and instrument-dense on the LCD.\n\nMotion is stepped, like an LCD refreshing: `steps()` easing for sprites, reveals and key presses; smooth easing only for physical camera moves (the pack zoom, the box flip). Everything degrades to a still, legible page under reduced motion.\n\nThe world explicitly refuses the dark crypto hero (giant counter, CA box, stat-card grid) and the neon retro-arcade costume; pixels here are a cheap handheld's, not an arcade cabinet's.",
+    "northStar": "The Footplate",
+    "overview": "The page is the footplate of a steam locomotive, and the fee escrow is literally the fire. The first view is the boiler backhead: a brass pressure gauge whose needle is the live escrow over the claim threshold, mounted above a stepped firebox arch with a pixel fire that burns as hard as the gauge reads. Scrolling pushes the camera through the firebox door until the heat fills the screen, then the page runs along the rails: the run as stops on the line, the engine classes as a route map, the logbook as punched card tickets, the cab board as a split-flap departure board, Stoker's footplate pass, and a last fire bed to end on.\n\nThe whole world is drawn in pixels. One art pixel of UI chrome is 4px (`--px`): corners notch in 4px steps, edges are lit and shaded in 4px rows, rivets are 4px squares and shadows are hard offsets. The art is pixel art generated in code: the fire is a low-res demo-scene \"Doom fire\" canvas, the gauge a 48x48 canvas, the locomotives canvas sprites built from their wheel arrangement, the mark a 16x16 SVG. Everything is scaled up without smoothing, and motion steps instead of easing.\n\nEverything sits on soot-black riveted iron. There is exactly one light, ember orange, and it belongs to Buy and to things that are live or next. Brass is the colour of instruments and of position: the gauge bezel, the route line and the train marker on it, the nav's active rule, the current engine class. Text is steam white on the iron and ticket ink on card stock. The world refuses the category default of a dark hero with a stat row and three feature cards.",
     "keyCharacteristics": [
-      "One continuous object: pack, then screen, then box back, then the mouth. Never a stack of generic sections.",
-      "Plum ink outlines (3-4px) on every printed thing; no hairlines, no grey borders.",
-      "The LCD is a separate material with its own two inks, square corners and DotGothic16 voice.",
-      "All sprites are original pixel grids drawn as crisp SVG rects; one grid, two palettes (printed colour and LCD).",
-      "Stepped motion everywhere except physical camera moves."
+      "Soot and riveted iron plates as the ground, built on a 4px art pixel; depth from hard pixel offset shadows and lit/shaded 4px edges.",
+      "One ember light for Buy and live/next indicators; brass for instruments, progress and position.",
+      "Chunky pixel plate type (Jersey 10), tiny pixel stamps (Tiny5), a dot-matrix reading face (DotGothic16), mono only for chain data.",
+      "Edmondson card tickets (buff stock, green band, square punched hole, stepped corners) for the logbook and the pass.",
+      "Every number on the page is live from the engine; motion is GSAP on `steps()` eases that leaves a readable default state."
     ],
     "rules": [
       {
-        "name": "The Gum Is Live Rule",
-        "body": "Bubblegum marks the one live, actionable key: buy. It is never a background, a heading colour or decoration.",
+        "name": "The One Light Rule",
+        "body": "Ember is reserved for Buy and for things that are live or next. If a decorative element glows ember, it is wrong; brass or steam takes it.",
         "section": "colors"
       },
       {
-        "name": "The Screen Has Two Inks Rule",
-        "body": "On the LCD only lcd, lcd-ink, lcd-mid and lcd-ghost exist. Sprites switch to the LCD palette (or its inverse for a selected item); no printed colour ever appears on the screen.",
+        "name": "The Brass Means Where Rule",
+        "body": "Brass marks instruments, progress and position: how full, how far, which one is current. It is not a second accent for emphasis or decoration.",
         "section": "colors"
       },
       {
-        "name": "The Jar Is Blue Rule",
-        "body": "Sky blue means the snack jar. Anything that is not the jar does not borrow it.",
+        "name": "The Card Stock Rule",
+        "body": "Light surfaces exist only as ticket stock (and the gauge face). There is no light theme and no light card on the iron otherwise.",
         "section": "colors"
       },
       {
-        "name": "The Screen Speaks Pixel Rule",
-        "body": "Anything the handheld would display (headings, readouts, menu labels, MUNCH's speech) is DotGothic16. Gabarito appears on the LCD only as explanatory body copy.",
+        "name": "The Cast Plate Rule",
+        "body": "Plate type is always uppercase Jersey 10 at line-height 0.82 and 0.01em tracking. Never set it in sentence case, never fake-bold it.",
         "section": "typography"
       },
       {
-        "name": "The Embossed Logo Rule",
-        "body": "The stroked, extruded logo treatment is reserved for the MUNCH wordmark. Other Bagel headings are flat plum print.",
+        "name": "The Stamp Is Not a Kicker Rule",
+        "body": "Tiny5 is for in-world stamps (a ticket's \"firebox, single\", a reading's caption, a field's label, a quiet button). It never sits above a section heading as an eyebrow.",
         "section": "typography"
       },
       {
-        "name": "The Skirt Means Press Rule",
-        "body": "A solid offset under an element means it is a key you can press, and it must collapse on `:active`. Static cards, panels and text never get an offset skirt.",
+        "name": "The Mono Is Chain Data Rule",
+        "body": "JetBrains Mono appears only for addresses, hashes and serials, never for numbers that are readings or for prose. It is the one non-pixel face on the page.",
+        "section": "typography"
+      },
+      {
+        "name": "The Hard Pixel Rule",
+        "body": "Shadows are hard offsets with zero blur, in whole art pixels, and edges are lit and shaded in 4px rows. Soft blur is reserved for real light, which means the firebox heat spill and nothing else. (The scrolled nav bar's soft drop and backdrop blur are the one leftover exception.)",
         "section": "elevation"
       }
     ],
     "dos": [
-      "Do outline every printed object in plum ink at 3-4px (`0 0 0 3px #2a1633`).",
-      "Do switch sprites to the LCD palette whenever they appear on the screen.",
-      "Do set anything the handheld displays in DotGothic16, and every hex address in JetBrains Mono.",
-      "Do use `steps()` easing for sprite, reveal and press motion; keep smooth easing for the pack zoom and box flip only.",
-      "Do keep square corners on the LCD and round, soft corners on cardboard and plastic.",
-      "Do give every pressable key a skirt that collapses on `:active`."
+      "Do keep every number live from the engine and show Stoker's pay runs as openly as the burns.",
+      "Do reserve ember for Buy and for live or next indicators; use brass for gauges, progress, position and the current state.",
+      "Do build everything on the 4px art pixel (`--px`): square corners notched in 4px steps, lit and shaded 4px edges, 4px square rivets.",
+      "Do use hard zero-blur offset shadows in whole art pixels for depth, and keep soft glow for the firebox heat spill only.",
+      "Do set headings in uppercase Jersey 10 at line-height 0.82, stamps in Tiny5 with 0.06em tracking, and reading text in DotGothic16.",
+      "Do draw world art as pixel art in code (canvas or crispEdges SVG, scaled with `image-rendering: pixelated`), bound to live data, with a still frame under reduced motion.",
+      "Do run scroll motion through `gsap.matchMedia` from a readable default state, with `steps(n)` eases.",
+      "Do keep engine class thresholds in `src/components/stoker/stages.ts`."
     ],
     "donts": [
-      "Don't use bubblegum for anything but the buy action, selection and the caret.",
-      "Don't put printed colour (tangerine, bubblegum, sun, jar, purple) on the LCD.",
-      "Don't build a dark crypto hero: no giant counter, standalone CA box or stat-card grid.",
-      "Don't reach for neon arcade styling (glows, scanlines, CRT curvature, gradients on pixels).",
-      "Don't add a skirt or offset shadow to static cards, panels or text.",
-      "Don't use the legacy alias tokens or helpers (night, panel, star, paper, pen, ring, fuel, soot, ember, plaque, btn-coal and the rest) on public surfaces; they exist for the log drawer and /memex."
+      "Don't add a second accent colour or use ember for decoration.",
+      "Don't use any border radius, or smooth anti-aliased curves in the art.",
+      "Don't use soft blurred drop shadows or smooth gradients for heat; posterise into hard bands.",
+      "Don't use smooth easing curves (expo, back, bounce); motion steps.",
+      "Don't use Tiny5 as a kicker or eyebrow above a heading.",
+      "Don't use JetBrains Mono for anything but addresses, hashes and serials.",
+      "Don't use the legacy colour or font names outside the log drawer and `/memex`.",
+      "Don't show a ticket, fire or pay run that is not a real on-chain event on the live site (the `?burn` demo is for recordings)."
     ]
   }
 }

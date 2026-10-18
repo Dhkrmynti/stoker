@@ -2,110 +2,124 @@
 @import "./fonts.css";
 
 /*
-  DIGBY: a pixel graveyard at 0x…dEaD, kept by a hooded skeleton with a shovel.
-  Night sky, wet dirt, moss on grey stone, one ecto-green light. Everything steps at 8 fps.
+  STOKER: the footplate of a steam locomotive. The fee escrow is the fire.
+  Drawn in pixels: soot iron, one ember light, brass instruments, steam-white type. Everything steps.
 */
 @theme {
-  /* the night: page ground, panels, lines */
-  --color-ink: #100c1b;
-  --color-ink-2: #19132c;
-  --color-ink-soft: #2f2549;
-  /* bone: text on the night */
-  --color-cream: #ece5d0;
-  --color-cream-hi: #f6f1e2;
-  --color-mist: #a39bba;
-  /* the one light in the yard: ecto green, for live and actionable things only */
-  --color-ecto: #9dff7a;
-  --color-ecto-lo: #4f9a3a;
-  --color-ecto-hi: #c4ffad;
-  /* the yard */
-  --color-gold: #f2c14e;
-  --color-gold-lo: #b07f22;
-  --color-stone: #8a879a;
-  --color-stone-lo: #625f73;
-  --color-stone-hi: #a9a6b8;
-  --color-dirt: #2a1c17;
-  --color-dirt-2: #4a3328;
-  --color-dirt-lo: #33221b;
-  --color-grass: #3d5c3a;
-  --color-moss: #5f8a4e;
-  --color-hood: #4e3b6b;
-  --color-moon: #f1e6bf;
-  --color-blood: #c43a4e;
+  /* iron: page ground, plates, seams */
+  --color-soot: #0f0d0d;
+  --color-iron: #171414;
+  --color-plate: #211c1b;
+  --color-plate-hi: #2c2524;
+  --color-seam: #3a3230;
+  --color-rivet: #5c514c;
+  /* steam: text on the iron */
+  --color-steam: #eee9e2;
+  --color-ash: #aaa098;
+  /* the one light: ember, for live and actionable things only */
+  --color-ember: #ff5a1f;
+  --color-ember-hi: #ff7a45;
+  --color-ember-lo: #b8321a;
+  --color-flame: #ffa630;
+  --color-core: #ffe08a;
+  /* instruments */
+  --color-brass: #d4a648;
+  --color-brass-hi: #ecc97a;
+  --color-brass-lo: #8a6a24;
+  --color-rail: #6d6560;
+  /* ticket stock: the logbook */
+  --color-ticket: #e7d7a8;
+  --color-ticket-band: #2f6b4f;
+  --color-ticket-ink: #1d1814;
 
-  /* shared names used by the log drawer and the operator panel, remapped into the yard */
-  --color-shell: #4e3b6b;
-  --color-sun: #f2c14e;
-  --color-bubble: #c43a4e;
-  --color-bubble-lo: #8e2436;
-  --color-bubble-hi: #d9566a;
-  --color-lcd: #9dff7a;
-  --color-lcd-ink: #16111f;
-  --color-lcd-soft: #2f4a26;
-  --color-lcd-mid: #4f9a3a;
-  --color-lcd-ghost: #8ae866;
-  --color-night: #100c1b;
-  --color-night-2: #19132c;
-  --color-panel: #19132c;
-  --color-panel-line: #2f2549;
-  --color-star: #ece5d0;
-  --color-star-dim: #a39bba;
-  --color-paper: #ece5d0;
-  --color-paper-shade: #ddd4bb;
-  --color-grid: #4e3b6b;
-  --color-pen: #16111f;
-  --color-pen-soft: #4e3b6b;
-  --color-marker: #c43a4e;
-  --color-marker-deep: #8e2436;
-  --color-ring: #9dff7a;
-  --color-ring-hot: #f2c14e;
-  --color-fuel: #f2c14e;
-  --color-fuel-ink: #6b4a12;
+  /* shared names used by the log drawer and the operator panel, remapped onto the footplate */
+  --color-ink: #0f0d0d;
+  --color-ink-2: #171414;
+  --color-ink-soft: #3a3230;
+  --color-cream: #eee9e2;
+  --color-cream-hi: #f6f2ec;
+  --color-mist: #aaa098;
+  --color-ecto: #ff5a1f;
+  --color-ecto-lo: #b8321a;
+  --color-ecto-hi: #ff7a45;
+  --color-gold: #d4a648;
+  --color-gold-lo: #8a6a24;
+  --color-hood: #3a3230;
+  --color-moon: #ecc97a;
+  --color-blood: #ff5a1f;
+  --color-shell: #3a3230;
+  --color-sun: #d4a648;
+  --color-bubble: #ff5a1f;
+  --color-bubble-lo: #b8321a;
+  --color-bubble-hi: #ff7a45;
+  --color-lcd: #ff5a1f;
+  --color-lcd-ink: #0f0d0d;
+  --color-lcd-soft: #5c2a17;
+  --color-lcd-mid: #b8321a;
+  --color-lcd-ghost: #ff7a45;
+  --color-night: #0f0d0d;
+  --color-night-2: #171414;
+  --color-panel: #171414;
+  --color-panel-line: #3a3230;
+  --color-star: #eee9e2;
+  --color-star-dim: #aaa098;
+  --color-paper: #e7d7a8;
+  --color-paper-shade: #d9c690;
+  --color-grid: #8a6a24;
+  --color-pen: #1d1814;
+  --color-pen-soft: #5a4a3a;
+  --color-marker: #b8321a;
+  --color-marker-deep: #8a2412;
+  --color-ring: #ff5a1f;
+  --color-ring-hot: #d4a648;
+  --color-fuel: #d4a648;
+  --color-fuel-ink: #4a3610;
 
-  --font-logo: "Pixelify Sans", "Courier New", monospace;
-  --font-lcd: "Silkscreen", "Courier New", monospace;
-  --font-body: "Atkinson Hyperlegible", system-ui, sans-serif;
+  /* pixel faces: Jersey 10 for the cast plates, Tiny5 for stamps, DotGothic16 for reading */
+  --font-plate: "Jersey 10", "Courier New", monospace;
+  --font-stencil: "Tiny5", "Courier New", monospace;
+  --font-body: "DotGothic16", "Courier New", monospace;
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
-  --font-display: "Pixelify Sans", "Courier New", monospace;
-  --font-pixel: "Silkscreen", monospace;
-  --font-hand: "Pixelify Sans", monospace;
-  --font-sign: "Pixelify Sans", monospace;
-
-  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  /* legacy names */
+  --font-logo: "Jersey 10", "Courier New", monospace;
+  --font-lcd: "Tiny5", "Courier New", monospace;
+  --font-display: "Jersey 10", "Courier New", monospace;
+  --font-pixel: "Tiny5", monospace;
+  --font-hand: "Jersey 10", monospace;
+  --font-sign: "Jersey 10", monospace;
 }
 
 :root {
   color-scheme: dark;
+  /* one art pixel of UI chrome */
+  --px: 4px;
 }
 
 @layer base {
   html {
-    background-color: var(--color-ink);
-    color: var(--color-cream);
-    scrollbar-color: var(--color-hood) var(--color-ink);
+    background-color: var(--color-soot);
+    color: var(--color-steam);
+    scrollbar-color: var(--color-seam) var(--color-soot);
     overflow-anchor: none;
   }
 
   body {
     margin: 0;
     font-family: var(--font-body);
-    /* Pixelify draws "fi" as one glyph that reads like an A */
-    font-variant-ligatures: none;
-    background-color: var(--color-ink);
-    color: var(--color-cream);
-    -webkit-font-smoothing: antialiased;
+    background-color: var(--color-soot);
+    color: var(--color-steam);
     -webkit-tap-highlight-color: transparent;
-    caret-color: var(--color-ecto);
+    caret-color: var(--color-ember);
   }
 
   ::selection {
-    background: var(--color-ecto);
-    color: var(--color-ink);
+    background: var(--color-ember);
+    color: var(--color-soot);
   }
 
   :focus-visible {
-    outline: 3px solid var(--color-ecto);
-    outline-offset: 3px;
+    outline: var(--px) solid var(--color-ember);
+    outline-offset: var(--px);
   }
 
   a {
@@ -118,14 +132,14 @@
   height: 12px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--color-ink);
+  background: var(--color-soot);
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--color-hood);
-  border: 3px solid var(--color-ink);
+  background: var(--color-seam);
+  border: 3px solid var(--color-soot);
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-ecto-lo);
+  background: var(--color-brass-lo);
 }
 
 .tabular {
@@ -140,151 +154,144 @@
 /* Component layer, so Tailwind utilities on an element still win. */
 @layer components {
 /* ───────── Voices ───────── */
+/* the cast plate: chunky pixel caps */
+.plate-type,
 .logo,
 .logo-sm,
 .display {
-  font-family: var(--font-logo);
-  font-weight: 700;
-  line-height: 0.95;
-  letter-spacing: -0.01em;
+  font-family: var(--font-plate);
+  font-weight: 400;
+  line-height: 0.82;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
 }
 .logo {
-  color: var(--color-cream);
-  text-shadow: 0.05em 0.05em 0 var(--color-hood), 0.1em 0.1em 0 var(--color-ink);
+  color: var(--color-steam);
 }
+/* the stamp: tiny pixel caps, for marks on iron and card */
+.stencil,
 .pxl,
 .label {
-  font-family: var(--font-lcd);
+  font-family: var(--font-stencil);
+  font-weight: 400;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.06em;
 }
 
 /* ───────── Materials ───────── */
-/* a stone slab: the panels in the yard */
+/* a riveted iron plate: notched pixel corners, a lit top-left edge, a square rivet in each corner */
+.iron-plate,
 .slab {
-  background: var(--color-ink-2);
-  box-shadow: 0 0 0 3px var(--color-ink-soft), inset 3px 3px 0 color-mix(in srgb, var(--color-cream) 6%, transparent);
+  position: relative;
+  background:
+    linear-gradient(var(--color-rivet), var(--color-rivet)) 12px 12px / var(--px) var(--px) no-repeat,
+    linear-gradient(var(--color-rivet), var(--color-rivet)) calc(100% - 12px) 12px / var(--px) var(--px) no-repeat,
+    linear-gradient(var(--color-rivet), var(--color-rivet)) 12px calc(100% - 12px) / var(--px) var(--px) no-repeat,
+    linear-gradient(var(--color-rivet), var(--color-rivet)) calc(100% - 12px) calc(100% - 12px) / var(--px) var(--px) no-repeat,
+    var(--color-plate);
+  box-shadow:
+    inset var(--px) var(--px) 0 var(--color-plate-hi),
+    inset calc(var(--px) * -1) calc(var(--px) * -1) 0 var(--color-iron),
+    var(--px) 0 0 var(--color-seam),
+    calc(var(--px) * -1) 0 0 var(--color-seam),
+    0 var(--px) 0 var(--color-seam),
+    0 calc(var(--px) * -1) 0 var(--color-seam),
+    0 calc(var(--px) * 3) 0 rgb(0 0 0 / 0.45);
 }
-/* weathered parchment: the operator panel's card */
+/* the soot ground: square rivets in rows, plate seams every 360px */
+.soot-wall {
+  background-color: var(--color-soot);
+  background-image:
+    linear-gradient(90deg, var(--color-plate-hi) 0 4px, transparent 4px),
+    linear-gradient(90deg, transparent calc(100% - 4px), var(--color-iron) calc(100% - 4px));
+  background-size: 24px 4px, 360px 100%;
+  background-repeat: repeat-x, repeat;
+  background-position: 10px 180px, 0 0;
+}
+/* the brass nameplate: a pixel border in dark brass, a lit top row */
+.nameplate {
+  position: relative;
+  background: var(--color-brass);
+  color: var(--color-ticket-ink);
+  box-shadow:
+    inset 0 var(--px) 0 var(--color-brass-hi),
+    inset 0 calc(var(--px) * -1) 0 var(--color-brass-lo),
+    var(--px) 0 0 var(--color-brass-lo),
+    calc(var(--px) * -1) 0 0 var(--color-brass-lo),
+    0 var(--px) 0 var(--color-brass-lo),
+    0 calc(var(--px) * -1) 0 var(--color-brass-lo),
+    0 calc(var(--px) * 3) 0 rgb(0 0 0 / 0.45);
+}
+/* weathered card: the operator panel */
 .cardboard {
   background-color: var(--color-paper);
   color: var(--color-pen);
-  box-shadow: 0 0 0 4px var(--color-ink-soft), inset 0 -6px 0 var(--color-paper-shade);
+  box-shadow: var(--px) 0 0 var(--color-paper-shade), calc(var(--px) * -1) 0 0 var(--color-paper-shade), 0 var(--px) 0 var(--color-paper-shade), 0 calc(var(--px) * -1) 0 var(--color-paper-shade), 0 calc(var(--px) * 4) 0 rgb(0 0 0 / 0.45);
 }
-/* the green status stamp */
 .lcd {
-  background-color: var(--color-lcd);
-  color: var(--color-lcd-ink);
+  background-color: var(--color-ember);
+  color: var(--color-soot);
 }
 .lcd-window {
-  background-color: var(--color-ink-2);
-  box-shadow: 0 0 0 3px var(--color-ink-soft);
-}
-/* underground: wet dirt with flecks */
-.underground {
-  background-color: var(--color-dirt);
-  background-image:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='36' shape-rendering='crispEdges'%3E%3Cg fill='%2333221b'%3E%3Crect x='3' y='5' width='3' height='3'/%3E%3Crect x='22' y='14' width='3' height='3'/%3E%3Crect x='12' y='27' width='3' height='3'/%3E%3C/g%3E%3Cg fill='%234a3328'%3E%3Crect x='30' y='4' width='3' height='3'/%3E%3Crect x='8' y='18' width='3' height='3'/%3E%3C/g%3E%3C/svg%3E");
-  background-size: 36px 36px;
-}
-/* where the grass meets the dirt: a stepped edge, not a gradient */
-.grass-edge::before {
-  content: "";
-  position: absolute;
-  inset-inline: 0;
-  top: 0;
-  height: 18px;
-  background:
-    linear-gradient(var(--color-grass) 0 6px, transparent 6px),
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='18' shape-rendering='crispEdges'%3E%3Cpath fill='%233d5c3a' d='M0 6h12v3H9v3H6V9H3v3H0z'/%3E%3Cpath fill='%235b8450' d='M3 3h3v3H3zM9 0h3v6H9z'/%3E%3C/svg%3E") 0 0 / 12px 18px repeat-x;
-  pointer-events: none;
-}
-/* the dirt giving way to the night below */
-.dither-bottom::after {
-  content: "";
-  position: absolute;
-  inset-inline: 0;
-  bottom: 0;
-  height: 18px;
-  pointer-events: none;
-  background-color: var(--color-ink);
-  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='6' height='18' shape-rendering='crispEdges'%3E%3Cpath d='M0 0h3v3H0zM3 6h3v3H3zM0 9h3v3H0zM0 12h6v6H0z'/%3E%3C/svg%3E") 0 0 / 6px 18px repeat-x;
-  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='6' height='18' shape-rendering='crispEdges'%3E%3Cpath d='M0 0h3v3H0zM3 6h3v3H3zM0 9h3v3H0zM0 12h6v6H0z'/%3E%3C/svg%3E") 0 0 / 6px 18px repeat-x;
-}
-
-/* Digby's speech: a pixel bubble with a stepped tail */
-.speech {
-  position: relative;
-  background: var(--color-cream);
-  padding: 0.45rem 0.8rem;
-  font-family: var(--font-logo);
-  font-size: 1rem;
-  font-weight: 500;
-  color: var(--color-ink);
-  box-shadow: 0 0 0 3px var(--color-ink);
-}
-.speech::before {
-  content: "";
-  position: absolute;
-  left: 10px;
-  top: 100%;
-  height: 9px;
-  width: 9px;
-  background:
-    linear-gradient(var(--color-ink), var(--color-ink)) 0 0 / 9px 3px no-repeat,
-    linear-gradient(var(--color-cream), var(--color-cream)) 3px 0 / 3px 3px no-repeat,
-    linear-gradient(var(--color-ink), var(--color-ink)) 0 3px / 6px 3px no-repeat,
-    linear-gradient(var(--color-ink), var(--color-ink)) 0 6px / 3px 3px no-repeat;
+  background-color: var(--color-iron);
+  box-shadow: inset 0 0 0 var(--px) var(--color-seam);
 }
 
 /* ───────── Controls ───────── */
-/* the buy button: the one green light, with a stepped pixel edge */
+/* the buy button: the one ember light, notched corners, a ledge you press down */
 .btn-buy {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.6rem;
-  background: var(--color-ecto);
-  font-family: var(--font-lcd);
+  background: var(--color-ember);
+  font-family: var(--font-plate);
+  font-size: 1.35em;
+  line-height: 1;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: var(--color-ink);
+  color: var(--color-soot);
+  margin: var(--px);
   box-shadow:
-    0 5px 0 var(--color-ecto-lo),
-    4px 0 0 var(--color-ink), -4px 0 0 var(--color-ink), 0 -4px 0 var(--color-ink), 0 9px 0 var(--color-ink);
-  margin: 4px;
-  transition: transform 0.08s steps(2), box-shadow 0.08s steps(2), background-color 0.12s steps(2);
+    inset 0 var(--px) 0 var(--color-ember-hi),
+    inset 0 calc(var(--px) * -1) 0 var(--color-ember-lo),
+    var(--px) 0 0 var(--color-soot),
+    calc(var(--px) * -1) 0 0 var(--color-soot),
+    0 calc(var(--px) * -1) 0 var(--color-soot),
+    0 var(--px) 0 var(--color-ember-lo),
+    0 calc(var(--px) * 2) 0 var(--color-soot);
+  transition: transform 0.1s steps(2), filter 0.1s steps(2);
 }
 .btn-buy:hover {
-  background: var(--color-ecto-hi);
+  filter: brightness(1.12);
+  transform: translateY(calc(var(--px) * -1));
 }
 .btn-buy:active {
-  transform: translateY(4px);
-  box-shadow:
-    0 1px 0 var(--color-ecto-lo),
-    4px 0 0 var(--color-ink), -4px 0 0 var(--color-ink), 0 -4px 0 var(--color-ink), 0 5px 0 var(--color-ink);
+  transform: translateY(var(--px));
 }
 
-/* a quiet key: bone outline on the night */
+/* a quiet key: steam on iron, a brass pixel border on hover */
 .btn-chip {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.45rem;
-  background: var(--color-ink-2);
+  background: var(--color-iron);
   padding: 0.6rem 1rem;
-  font-family: var(--font-lcd);
+  font-family: var(--font-stencil);
   font-size: 0.8rem;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--color-cream);
-  box-shadow: inset 0 0 0 3px var(--color-ink-soft);
-  transition: box-shadow 0.12s steps(2), color 0.12s steps(2);
+  color: var(--color-steam);
+  box-shadow: inset 0 0 0 var(--px) var(--color-seam);
+  transition: box-shadow 0.1s steps(2), color 0.1s steps(2);
 }
 .btn-chip:hover {
-  color: var(--color-ecto);
-  box-shadow: inset 0 0 0 3px var(--color-ecto-lo);
+  color: var(--color-brass-hi);
+  box-shadow: inset 0 0 0 var(--px) var(--color-brass-lo);
 }
 .btn-chip:active {
-  transform: translateY(2px);
+  transform: translateY(var(--px));
 }
 /* the operator panel's dark key */
 .btn-ink {
@@ -292,39 +299,40 @@
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  background: var(--color-ink);
+  background: var(--color-soot);
   padding: 0.85rem 1.4rem;
-  font-family: var(--font-lcd);
+  font-family: var(--font-stencil);
   font-size: 0.95rem;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--color-ecto);
-  box-shadow: 0 0 0 3px var(--color-ink), 0 5px 0 3px var(--color-ink-soft);
-  transition: transform 0.08s steps(2), box-shadow 0.08s steps(2), background-color 0.12s steps(2);
+  color: var(--color-ember);
+  box-shadow: 0 var(--px) 0 var(--color-seam);
+  transition: transform 0.1s steps(2);
 }
 .btn-ink:hover:not(:disabled) {
-  background: var(--color-ink-2);
+  background: var(--color-iron);
 }
 .btn-ink:active:not(:disabled) {
-  transform: translateY(5px);
-  box-shadow: 0 0 0 3px var(--color-ink), 0 0 0 3px var(--color-ink-soft);
+  transform: translateY(var(--px));
+  box-shadow: none;
 }
 
-/* the contract address, set in a stone strip */
+/* the contract address, on an iron strip */
 .ca-field {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 0.75rem;
-  background: var(--color-ink-2);
-  padding: 0.4rem 0.45rem 0.4rem 1rem;
-  box-shadow: inset 0 0 0 3px var(--color-ink-soft);
-  transition: box-shadow 0.12s steps(2);
+  background: var(--color-iron);
+  padding: 0.45rem 0.45rem 0.45rem 1rem;
+  box-shadow: inset 0 0 0 var(--px) var(--color-seam);
+  transition: box-shadow 0.1s steps(2);
 }
 .ca-field:hover {
-  box-shadow: inset 0 0 0 3px var(--color-ecto-lo);
+  box-shadow: inset 0 0 0 var(--px) var(--color-brass-lo);
 }
 
-/* the log drawer: a parchment register */
+/* the log drawer: ticket card stock */
 .paper {
   position: relative;
   background-color: var(--color-paper);
@@ -338,12 +346,11 @@
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  font-weight: 700;
-  transition: background-color 0.12s steps(2), color 0.12s steps(2);
+  transition: background-color 0.1s steps(2), color 0.1s steps(2), box-shadow 0.1s steps(2);
 }
 .btn-pen {
   color: var(--color-pen);
-  box-shadow: inset 0 0 0 2px var(--color-pen);
+  box-shadow: inset 0 0 0 3px var(--color-pen);
 }
 .btn-pen:hover {
   background: var(--color-pen);
@@ -351,107 +358,112 @@
 }
 .btn-ring,
 .btn-coal {
-  background: var(--color-ecto);
-  color: var(--color-ink);
-  box-shadow: 0 0 0 3px var(--color-ink);
+  background: var(--color-ember);
+  color: var(--color-soot);
 }
 .btn-ghost {
-  color: var(--color-star);
-  box-shadow: inset 0 0 0 2px var(--color-panel-line);
+  color: var(--color-steam);
+  box-shadow: inset 0 0 0 3px var(--color-seam);
 }
 .btn-ghost:hover {
-  box-shadow: inset 0 0 0 2px var(--color-ecto);
+  box-shadow: inset 0 0 0 3px var(--color-ember);
 }
 .plaque {
   background: var(--color-paper);
   color: var(--color-pen);
 }
 .sign-lettering {
-  font-family: var(--font-logo);
+  font-family: var(--font-plate);
+}
+
+/* an Edmondson card ticket: buff stock, stepped corners, a green band, a square punched hole */
+.ticket {
+  position: relative;
+  background:
+    linear-gradient(var(--color-soot), var(--color-soot)) calc(100% - 20px) 50% / 12px 12px no-repeat,
+    linear-gradient(90deg, transparent 0 16px, var(--color-ticket-band) 16px 24px, transparent 24px),
+    var(--color-ticket);
+  color: var(--color-ticket-ink);
+  clip-path: polygon(0 8px, 4px 8px, 4px 4px, 8px 4px, 8px 0, calc(100% - 8px) 0, calc(100% - 8px) 4px, calc(100% - 4px) 4px, calc(100% - 4px) 8px, 100% 8px, 100% calc(100% - 8px), calc(100% - 4px) calc(100% - 8px), calc(100% - 4px) calc(100% - 4px), calc(100% - 8px) calc(100% - 4px), calc(100% - 8px) 100%, 8px 100%, 8px calc(100% - 4px), 4px calc(100% - 4px), 4px calc(100% - 8px), 0 calc(100% - 8px));
+}
+
+/* a split-flap tile on the cab board */
+.flap {
+  position: relative;
+  display: inline-block;
+  min-width: 0.7em;
+  padding: 0.06em 0.06em 0;
+  background: linear-gradient(180deg, #1e1a19 0 50%, #151211 50% 100%);
+  color: var(--color-steam);
+  text-align: center;
+}
+.flap::after {
+  content: "";
+  position: absolute;
+  inset-inline: 0;
+  top: 50%;
+  height: 2px;
+  background: var(--color-soot);
+}
+
+/* Stoker's shout: a pixel speech bubble with a stepped tail */
+.speech {
+  position: relative;
+  background: var(--color-steam);
+  padding: 0.35rem 0.8rem 0.25rem;
+  font-family: var(--font-plate);
+  font-size: 1.5rem;
+  line-height: 1;
+  text-transform: uppercase;
+  color: var(--color-soot);
+  box-shadow: var(--px) 0 0 var(--color-soot), calc(var(--px) * -1) 0 0 var(--color-soot), 0 var(--px) 0 var(--color-soot), 0 calc(var(--px) * -1) 0 var(--color-soot);
+}
+.speech::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  width: 12px;
+  height: 8px;
+  background: linear-gradient(var(--color-steam), var(--color-steam)) 0 0 / 12px 4px no-repeat, linear-gradient(var(--color-steam), var(--color-steam)) 0 4px / 4px 4px no-repeat;
 }
 
 /* ───────── Motion: all of it stepped ───────── */
 @media (prefers-reduced-motion: no-preference) {
-  .px-bob {
-    animation: px-bob 1.2s steps(2) infinite;
-  }
   .reink {
-    animation: reink 0.35s steps(4) both;
+    animation: reink 0.3s steps(3) both;
   }
   .nom-blink {
-    animation: nom-blink 0.5s steps(1) infinite;
+    animation: nom-blink 0.8s steps(1) infinite;
   }
-  .rise {
-    animation: rise 0.6s steps(6) both;
-  }
-}
-@keyframes px-bob {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-6%); }
 }
 @keyframes nom-blink {
-  50% { opacity: 0; }
+  50% { opacity: 0.25; }
 }
 @keyframes reink {
-  0% { opacity: 0; transform: translateY(0.2em); }
+  0% { opacity: 0; transform: translateY(0.25em); }
   100% { opacity: 1; transform: none; }
 }
-@keyframes rise {
-  0% { transform: translateY(100%); }
-  100% { transform: none; }
-}
 }
 
-/* the topsoil right under the yard: the same dirt as the scene's ground, so the grass runs straight into it */
-.soil {
-  background-color: var(--color-dirt-2);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' shape-rendering='crispEdges'%3E%3Cg fill='%2333221b'%3E%3Crect x='2' y='4' width='3' height='3'/%3E%3Crect x='17' y='11' width='3' height='3'/%3E%3Crect x='9' y='22' width='3' height='3'/%3E%3Crect x='25' y='25' width='3' height='3'/%3E%3C/g%3E%3C/svg%3E");
-  background-size: 30px 30px;
+/* a panel over the map: dark enough to read on, the island still faint behind it */
+.map-panel {
+  background: rgb(15 13 13 / 0.88);
+  box-shadow:
+    var(--px) 0 0 var(--color-seam),
+    calc(var(--px) * -1) 0 0 var(--color-seam),
+    0 var(--px) 0 var(--color-seam),
+    0 calc(var(--px) * -1) 0 var(--color-seam),
+    0 calc(var(--px) * 3) 0 rgb(0 0 0 / 0.45);
+}
+/* type set straight on the map: a hard soot outline and drop, like a sprite label */
+.map-type {
+  text-shadow:
+    2px 0 0 var(--color-soot), -2px 0 0 var(--color-soot), 0 2px 0 var(--color-soot), 0 -2px 0 var(--color-soot),
+    4px 4px 0 var(--color-soot);
 }
 
-/* a headstone: grey stone with a stepped pixel arch, moss at the foot and a darker base */
-.headstone {
-  position: relative;
-  background:
-    linear-gradient(var(--color-moss), var(--color-moss)) 0 calc(100% - 12px) / 18px 6px no-repeat,
-    linear-gradient(var(--color-moss), var(--color-moss)) 0 calc(100% - 18px) / 6px 6px no-repeat,
-    linear-gradient(var(--color-moss), var(--color-moss)) 100% calc(100% - 12px) / 12px 6px no-repeat,
-    linear-gradient(var(--color-stone-lo), var(--color-stone-lo)) 0 100% / 100% 12px no-repeat,
-    linear-gradient(90deg, var(--color-stone-hi) 0 6px, var(--color-stone) 6px calc(100% - 6px), var(--color-stone-lo) calc(100% - 6px));
-  color: var(--color-ink);
-  clip-path: polygon(0 36px, 6px 36px, 6px 22px, 14px 22px, 14px 13px, 26px 13px, 26px 6px, 44px 6px, 44px 0, calc(100% - 44px) 0, calc(100% - 44px) 6px, calc(100% - 26px) 6px, calc(100% - 26px) 13px, calc(100% - 14px) 13px, calc(100% - 14px) 22px, calc(100% - 6px) 22px, calc(100% - 6px) 36px, 100% 36px, 100% 100%, 0 100%);
-  padding-bottom: calc(1.25rem + 12px);
-}
-
-/* the night shift's steps: unlit until the falling coin reaches them (only when motion is on; the default is lit) */
-.step[data-lit="false"] > * {
-  opacity: 0.4;
-  filter: grayscale(0.7);
-}
-.step > * {
-  transition: opacity 0.24s steps(3), filter 0.24s steps(3);
-}
-
-/* Digby's hit area in the yard: invisible until hovered or focused, then a stepped ecto outline */
-.poke-zone {
-  outline: 3px solid transparent;
-  outline-offset: 2px;
-  transition: outline-color 0.12s steps(2);
-}
-.poke-zone:hover,
-.poke-zone:focus-visible {
-  outline-color: color-mix(in srgb, var(--color-ecto) 70%, transparent);
-}
-[data-sunk] .poke-zone {
-  visibility: hidden;
-}
-
-/* the stone tablet set in the topsoil under the yard: grey stone, stepped corners, engraved ink */
-.tablet {
-  position: relative;
-  background:
-    linear-gradient(var(--color-stone-lo), var(--color-stone-lo)) 0 100% / 100% 6px no-repeat,
-    linear-gradient(90deg, var(--color-stone-hi) 0 6px, var(--color-stone) 6px calc(100% - 6px), var(--color-stone-lo) calc(100% - 6px));
-  color: var(--color-ink);
-  clip-path: polygon(0 12px, 6px 12px, 6px 6px, 12px 6px, 12px 0, calc(100% - 12px) 0, calc(100% - 12px) 6px, calc(100% - 6px) 6px, calc(100% - 6px) 12px, 100% 12px, 100% calc(100% - 12px), calc(100% - 6px) calc(100% - 12px), calc(100% - 6px) calc(100% - 6px), calc(100% - 12px) calc(100% - 6px), calc(100% - 12px) 100%, 12px 100%, 12px calc(100% - 6px), 6px calc(100% - 6px), 6px calc(100% - 12px), 0 calc(100% - 12px));
+/* the firebox opening: a stepped pixel arch, the glow sits on a layer behind it */
+.arch {
+  clip-path: polygon(0 100%, 0 34%, 1.5% 34%, 1.5% 26%, 3% 26%, 3% 19%, 5% 19%, 5% 13%, 7.5% 13%, 7.5% 8.5%, 10.5% 8.5%, 10.5% 5%, 14% 5%, 14% 2.5%, 19% 2.5%, 19% 0.8%, 26% 0.8%, 26% 0, 74% 0, 74% 0.8%, 81% 0.8%, 81% 2.5%, 86% 2.5%, 86% 5%, 89.5% 5%, 89.5% 8.5%, 92.5% 8.5%, 92.5% 13%, 95% 13%, 95% 19%, 97% 19%, 97% 26%, 98.5% 26%, 98.5% 34%, 100% 34%, 100% 100%);
 }

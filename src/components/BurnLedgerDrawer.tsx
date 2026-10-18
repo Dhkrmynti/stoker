@@ -105,7 +105,7 @@ export const BurnLedgerDrawer: React.FC<BurnLedgerDrawerProps> = ({
               time: timeOnly,
               type: "burn",
               tag: "BURN",
-              message: `Permanently burned ${new Intl.NumberFormat("en-US").format(Math.round(burnedTokens || 250000))} $DIGBY, buried by Digby at 0x000...dEaD`,
+              message: `Permanently burned ${new Intl.NumberFormat("en-US").format(Math.round(burnedTokens || 250000))} $COAL, shovelled into the firebox at 0x000...dEaD`,
               txHash: entry.burnTx || entry.claimTx || "",
             });
           }
@@ -220,16 +220,16 @@ export const BurnLedgerDrawer: React.FC<BurnLedgerDrawerProps> = ({
   };
 
   const TAG_LABELS: Record<NormalizedLogItem["type"], string> = {
-    burn: "buried",
+    burn: "burned",
     buyback: "bought",
-    claim: "lantern",
+    claim: "claim",
     trigger: "trade",
-    system: "night shift",
+    system: "bot",
   };
 
   const FILTER_LABELS: Record<typeof selectedFilter, string> = {
     all: "all",
-    burn: "burials",
+    burn: "burns",
     buyback: "buys",
     claim: "claims",
   };
@@ -250,7 +250,7 @@ export const BurnLedgerDrawer: React.FC<BurnLedgerDrawerProps> = ({
                         <div className="flex items-start justify-between gap-4 px-5 pb-5 pt-6 sm:px-7">
               <div>
                 <h3 id="burn-log-title" className="m-0 display text-[2.8rem] text-pen">
-                  The grave register
+                  The logbook
                 </h3>
                 <p className="m-0 mt-2 text-[0.98rem] text-pen-soft">
                   Live from Robinhood Chain · {filteredLogs.length} {filteredLogs.length === 1 ? "entry" : "entries"}
@@ -344,7 +344,7 @@ export const BurnLedgerDrawer: React.FC<BurnLedgerDrawerProps> = ({
 
             {/* Footer */}
             <div className="flex items-center justify-between gap-3 border-t border-pen/25 bg-paper/85 px-5 py-4 text-[0.85rem] text-pen-soft sm:px-7">
-              <span className="truncate font-mono">Digby's yard · 0x000...dEaD</span>
+              <span className="truncate font-mono">Firebox · 0x000...dEaD</span>
               <button type="button" onClick={onClose} className="btn-pen cursor-pointer bg-paper px-4 py-1.5 text-[0.95rem]">
                 close
               </button>

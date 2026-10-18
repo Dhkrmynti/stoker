@@ -16,7 +16,8 @@ import {
   RotateCcw,
   Trash2
 } from 'lucide-react';
-import { DigbyMark, SpriteCard } from './digby/Sprite';
+import { StokerMark } from './stoker/Mark';
+import { Locomotive } from './stoker/Locomotive';
 
 interface MemexAdminProps {
   onBack?: () => void;
@@ -303,30 +304,30 @@ export function MemexAdmin({ onBack }: MemexAdminProps) {
         <div className="flex items-center gap-3">
           <button onClick={navigateToDashboard} className="flex cursor-pointer items-center gap-2 text-sm font-semibold text-cream transition-colors hover:text-sun">
             <ArrowLeft className="h-4 w-4" />
-            <span className="hidden sm:inline">Back to the yard</span>
+            <span className="hidden sm:inline">Back to the footplate</span>
           </button>
           <div className="h-5 w-[2px] bg-ink-soft" />
           <div className="flex items-center gap-2.5">
-            <DigbyMark className="h-8 w-9" />
-            <span className="font-logo text-[1.55rem] font-bold leading-none text-cream">DIGBY</span>
-            <span className="lcd px-2 py-0.5 font-lcd text-[0.72rem] uppercase">keeper</span>
+            <StokerMark className="h-8 w-8" />
+            <span className="font-logo text-[1.55rem] font-bold leading-none text-cream">STOKER</span>
+            <span className="lcd px-2 py-0.5 font-lcd text-[0.72rem] uppercase">driver</span>
           </div>
         </div>
       </header>
 
-      {/* The groundskeeper's office: where the night shift is set up */}
+      {/* The engine shed: where the bot is set up */}
       <main className="flex flex-1 items-center justify-center p-4 sm:p-6 md:p-8">
         <div className="w-full max-w-xl">
           <div className="cardboard relative px-4 pb-5 pt-9 sm:px-7 sm:pb-7">
             <div className="mb-5 flex items-end justify-between gap-4">
               <div>
-                <span className="lcd inline-block px-2 py-0.5 font-lcd text-[0.75rem] uppercase">keeper only</span>
-                <h1 className="m-0 mt-3 font-logo text-[clamp(2rem,6vw,2.7rem)] leading-[1] text-ink">Night shift settings</h1>
+                <span className="lcd inline-block px-2 py-0.5 font-lcd text-[0.75rem] uppercase">driver only</span>
+                <h1 className="m-0 mt-3 font-logo text-[clamp(2rem,6vw,2.7rem)] leading-[1] text-ink">Engine settings</h1>
                 <p className="m-0 mt-2 max-w-[44ch] text-[0.95rem] font-semibold leading-snug text-ink">
-                  The keeper&apos;s key runs the night shift. Set it and the token Digby buries. Every shift runs from what you save here.
+                  The driver&apos;s key runs the bot. Set it and the token Stoker burns. Every run uses what you save here.
                 </p>
               </div>
-              <SpriteCard art="dig" stage={3} label="Digby digging" className="hidden w-24 shrink-0 shadow-[0_0_0_3px_var(--color-ink)] sm:block" />
+              <Locomotive lead={2} drive={3} trail={1} running label="" className="hidden w-32 shrink-0 sm:block" />
             </div>
 
             <form onSubmit={handleSave} className="space-y-6 bg-cream p-5 text-ink shadow-[0_0_0_3px_var(--color-ink)] sm:p-6">
@@ -426,7 +427,7 @@ export function MemexAdmin({ onBack }: MemexAdminProps) {
                 {tokenAddress.trim().length > 0 && !isTokenValid ? (
                   <p className={warnClass}>Must be a valid 42-character EVM address (starting with 0x).</p>
                 ) : (
-                  <p className={hintClass}>The token the night shift buys back and Digby buries at 0x…dEaD.</p>
+                  <p className={hintClass}>The token the bot buys back and Stoker burns at 0x…dEaD.</p>
                 )}
               </div>
 
@@ -459,7 +460,7 @@ export function MemexAdmin({ onBack }: MemexAdminProps) {
                 {treasuryAddress.trim().length > 0 && !isTreasuryValid ? (
                   <p className={warnClass}>Must be a valid 42-character EVM address (starting with 0x).</p>
                 ) : (
-                  <p className={hintClass}>Where every other shift's ETH goes (Digby's wages). Leave it empty and the ETH stays in the keeper wallet.</p>
+                  <p className={hintClass}>Where every other run's ETH goes (Stoker's pay). Leave it empty and the ETH stays in the driver wallet.</p>
                 )}
               </div>
 

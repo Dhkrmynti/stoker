@@ -2,16 +2,23 @@
 version: 1
 slug: "src-app-tsx"
 primary_target: "src/App.tsx"
-related_targets: ["src/components/digby"]
+related_targets: []
 ---
-# Surface: public landing + live burn tracker (src/App.tsx)
 
-Mode: Persuade. Visitors arrive from X/Telegram (phone first), want to verify the burn is real, copy the CA, and buy. Brand: DIGBY ($DIGBY), a hooded skeleton gravedigger who keeps the pixel graveyard at 0x…dEaD and buries every bought-back $DIGBY. Tone: grumpy, deadpan, a little cosy ("another one for the ground."). Wage runs shown openly as "Digby's wages" (project wallet).
+Scope: public landing + live tracker (`/`), Persuade mode. `/memex` stays an Operate surface and only inherits tokens.
 
-Constraints: UI and lore only. useBurnEngine, web3 utils, contracts, bot, /memex logic, thresholds and data flow stay untouched. Persisted ledger keys stay readable. Nothing of MUNCH, Lava Pit, the Void, the ghost train or Sherwood survives on the public page.
+Audience: Robinhood Chain memecoin traders arriving from X on phone or desktop. Job: see the burn is real, copy the CA, buy.
 
 ## Direction contract
-THESIS: The page is the graveyard and the ground under it. The first viewport is the live yard; scrolling sinks the camera below the grass and the page continues underground, then comes back up into the night for the register, turns to parchment for the story, and ends under the moon.
-OWN-WORLD: night sky violet-black, wet dirt browns, grey stone with moss, Digby's hood violet, one ecto-green light for live and actionable things. Pixelify Sans, Silkscreen, Atkinson Hyperlegible, JetBrains Mono. All art built in code (src/components/digby/pixels.ts), canvas at 1× scaled pixelated.
-FIRST VIEWPORT: the live graveyard canvas (headstones = real burials, lantern = fee escrow, Digby digs when the engine runs), wordmark in the sky; under the grass the buried total, % of supply, graves, lantern, Buy, Chart, CA, Poke Digby.
-SIGNATURE MOTION: the descent below the grass; the shaft with the falling coin lighting each step; headstones and stage cards rising out of the ground; the parchment unrolling; the closing line dropping word by word. All stepped.
+
+THESIS: the page is the footplate of a steam locomotive and the fee escrow is literally the fire. Refuses the category default of a dark hero with a stat row and three feature cards, and refuses the previous pixel-sprite worlds.
+
+OWN-WORLD: soot-black riveted iron plate, one ember-orange light (buy, live), brass for instruments, steam-white text. Big Shoulders (cast nameplate) display, Big Shoulders Stencil for in-world stamps, Archivo body, JetBrains Mono for hashes. Round brass gauge, Edmondson ticket stubs, split-flap board, rails and sleepers.
+
+STORY: trades build pressure, a full gauge blows the whistle, the bot buys $COAL, odd runs go in the firebox, even runs are Stoker's pay. The locomotive grows by wheel arrangement as supply burns.
+
+FIRST VIEWPORT: left 5/12: STOKER wordmark, one line, Buy + Chart, CA strip, brass nameplate with live burned total, % of supply, fires. Right 7/12: the boiler backhead, a live pressure gauge (needle = escrow/threshold) over an open firebox with a canvas fire whose size tracks the gauge.
+
+FORM: grounded pick, pinned brief (user chose STOKER). Signature: scroll pushes the camera into the firebox until the heat fills the screen, then the horizontal run along the rails. seed: none (unavailable). The user pinned the direction by choosing STOKER from three lore options; no roll was made.
+
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance

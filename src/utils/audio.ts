@@ -13,7 +13,7 @@ class SoundController {
 
   /**
    * Browsers keep audio silent until the visitor clicks, taps or types on the page. Call this
-   * from such an event so later sounds (the grave bell when a burial lands) can play.
+   * from such an event so later sounds (the whistle when a burn lands) can play.
    */
   public unlock() {
     try {
@@ -24,7 +24,7 @@ class SoundController {
     }
   }
 
-  /** Poking Digby: a shovel thunk and a little rattle, loud enough for laptop speakers. */
+  /** Rapping on the firebox door: a shovel thunk and a little rattle, loud enough for laptop speakers. */
   public playPokeSound() {
     this.playTone(196, 'square', 0.08, 0.07);
     setTimeout(() => this.playTone(523.25, 'square', 0.06, 0.05), 70);
