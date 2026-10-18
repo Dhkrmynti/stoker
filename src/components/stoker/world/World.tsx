@@ -16,10 +16,29 @@ export interface WorldProps {
   burnKey: string | null;
   /** a rap on the furnace door */
   stokes: number;
+  /**
+   * render for the X kit instead of the page: no scroll, no clock. The kit page drives it through
+   * `window.__stokerKit` (set the shot and doors, step time, render a frame).
+   */
+  kit?: { pix: number };
+}
+
+/** The handle the X kit page drives the map with. */
+export interface StokerKit {
+  setShot: (shot: Shot) => void;
+  setDoors: (v: number) => void;
+  burn: () => void;
+  step: (dt: number) => void;
+}
+
+declare global {
+  interface Window {
+    __stokerKit?: StokerKit;
+  }
 }
 
 type V3 = [number, number, number];
-interface Shot {
+export interface Shot {
   pos: V3;
   look: V3;
   /** fly straight to and from this shot, never arcing over (the way in through the furnace door) */
@@ -263,7 +282,8 @@ export default function World(props: WorldProps) {
           }
       if (still) dirty = true;
     };
-    const st = ScrollTrigger.create({ start: 0, end: 'max', onUpdate: readScroll, onRefresh: () => (measure(), readScroll()) });
+    const kit = live.current.kit;
+    const st = kit ? null : ScrollTrigger.create({ start: 0, end: 'max', onUpdate: readScroll, onRefresh: () => (measure(), readScroll()) });
     measure();
     readScroll();
     let t = target;
@@ -276,8 +296,8 @@ export default function World(props: WorldProps) {
     let H = 0;
     let wide = true;
     const resize = () => {
-      const pix = window.innerWidth < 768 ? 2 : 3;
-      wide = window.innerWidth >= 1024;
+      const pix = kit ? kit.pix : window.innerWidth < 768 ? 2 : 3;
+      wide = kit ? true : window.innerWidth >= 1024;
       W = Math.max(64, Math.ceil(window.innerWidth / pix));
       H = Math.max(64, Math.ceil(window.innerHeight / pix));
       renderer.setSize(W, H, false);
@@ -291,7 +311,16 @@ export default function World(props: WorldProps) {
     resize();
 
     let doorOpen = 0;
+    let kitShot: Shot = SHOTS.hero;
+    let kitDoors = 0;
     const placeCamera = () => {
+      if (kit) {
+        doorOpen = kitDoors;
+        camera.position.set(...kitShot.pos);
+        camera.lookAt(...kitShot.look);
+        camera.setViewOffset(W, H, -(kitShot.side ?? 0) * W * 0.5, 0, W, H);
+        return;
+      }
       if (!anchors.length) return;
       const i = Math.max(0, Math.min(anchors.length - 1, Math.floor(t)));
       const j = Math.min(anchors.length - 1, i + 1);
@@ -490,23 +519,40 @@ export default function World(props: WorldProps) {
         raf = requestAnimationFrame(frame);
       }
     };
-    document.addEventListener('visibilitychange', start);
-    // fonts for the signs, then the first frame
-    (document.fonts?.ready ?? Promise.resolve()).then(() => {
-      measure();
-      readScroll();
-      start();
-    });
+    let kitTime = 0;
+    if (kit) {
+      canvas.style.opacity = '1';
+      window.__stokerKit = {
+        setShot: (s) => (kitShot = s),
+        setDoors: (v) => (kitDoors = v),
+        burn: () => (burnQueued.current = true),
+        step: (dt) => {
+          kitTime += dt;
+          step(dt, kitTime);
+          placeCamera();
+          renderer.render(scene, camera);
+        },
+      };
+    } else {
+      document.addEventListener('visibilitychange', start);
+      // fonts for the signs, then the first frame
+      (document.fonts?.ready ?? Promise.resolve()).then(() => {
+        measure();
+        readScroll();
+        start();
+      });
+    }
 
     return () => {
       cancelAnimationFrame(raf);
       window.clearInterval(stillTimer);
       window.removeEventListener('resize', resize);
       document.removeEventListener('visibilitychange', start);
-      st.kill();
+      st?.kill();
+      if (kit) delete window.__stokerKit;
       renderer.dispose();
     };
   }, []);
 
-  return <canvas ref={ref} aria-hidden="true" className="pixelated pointer-events-none fixed inset-0 z-0 block h-full w-full opacity-0 transition-opacity duration-500 ease-[steps(5)]" />;
+  return <canvas ref={ref} aria-hidden="true" className={`pixelated pointer-events-none ${props.kit ? "absolute" : "fixed"} inset-0 z-0 block h-full w-full opacity-0 transition-opacity duration-500 ease-[steps(5)]`} />;
 }
